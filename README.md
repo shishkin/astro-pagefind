@@ -44,3 +44,5 @@ import Search from "astro-pagefind/Search.astro";
 
 <Search />
 ```
+
+See [Main.layout](./src/layouts/Main.astro) for a usage example.

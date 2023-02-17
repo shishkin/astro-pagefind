@@ -1,0 +1,64 @@
+---
+import Search from "~/components/Search.astro";
+---
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>astro-pagefind</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <Search id="search" className="pagefind-ui" />
+      </nav>
+    </header>
+    <main>
+      <slot />
+    </main>
+  </body>
+</html>
+<style is:global>
+  nav {
+    display: grid;
+    place-items: center;
+  }
+
+  #search {
+    --pagefind-ui-scale: 0.75;
+    --pagefind-ui-primary: navy;
+    --pagefind-ui-text: black;
+    --pagefind-ui-background: lightyellow;
+    --pagefind-ui-border: slategrey;
+    --pagefind-ui-border-width: 1px;
+    --pagefind-ui-border-radius: 0.25rem;
+    --pagefind-ui-font: sans-serif;
+
+    width: 50%;
+  }
+
+  #search .pagefind-ui__drawer:not(.pagefind-ui__hidden) {
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin-top: 0px;
+    z-index: 9999;
+    padding: 0 2em 1em;
+    overflow-y: auto;
+    box-shadow: 0 10px 10px -5px rgba(0, 0, 0, 0.2),
+      0 2px 2px 0 rgba(0, 0, 0, 0.1);
+    border-bottom-right-radius: var(--pagefind-ui-border-radius);
+    border-bottom-left-radius: var(--pagefind-ui-border-radius);
+    background-color: var(--pagefind-ui-background);
+  }
+
+  #search .pagefind-ui__result-link {
+    color: var(--pagefind-ui-primary);
+  }
+
+  #search .pagefind-ui__result-excerpt {
+    color: var(--pagefind-ui-text);
+  }
+</style>
