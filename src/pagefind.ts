@@ -8,8 +8,9 @@ export default function pagefind(): AstroIntegration {
   return {
     name: "pagefind",
     hooks: {
-      "astro:config:done": ({ config }) => {
-        outDir = fileURLToPath(config.outDir);
+      "astro:config:setup": ({ config }) => {
+        const c = config as unknown as { outDir: URL };
+        outDir = fileURLToPath(c.outDir);
       },
       "astro:server:setup": ({ server }) => {
         const serve = sirv(outDir, {

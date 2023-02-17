@@ -25,7 +25,7 @@ Add integration to the Astro config:
 //astro.config.ts
 
 import { defineConfig } from "astro/config";
-import { pagefind } from "astro-pagefind";
+import pagefind from "astro-pagefind";
 
 export default defineConfig({
   build: {
@@ -39,7 +39,7 @@ Add search component on a page:
 
 ```astro
 ---
-import { Search } from "astro-pagefind";
+import Search from "astro-pagefind/components/Search";
 ---
 
 <Search />

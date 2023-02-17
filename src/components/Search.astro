@@ -1,13 +1,9 @@
 ---
 import "@pagefind/default-ui/css/ui.css";
 import { join } from "node:path";
+import type { Props } from "./Search.js";
 
-export interface Props {
-  readonly id?: string;
-  readonly className?: string;
-}
-
-const { id, className } = Astro.props;
+const { id, className } = Astro.props as Props;
 const bundlePath = join(import.meta.env.BASE_URL, "_pagefind/");
 const divProps = {
   ...(id ? { id } : {}),
