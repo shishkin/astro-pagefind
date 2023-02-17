@@ -1,0 +1,30 @@
+---
+import "@pagefind/default-ui/css/ui.css";
+import { join } from "node:path";
+
+export interface Props {
+  readonly id?: string;
+  readonly className?: string;
+}
+
+const { id, className } = Astro.props;
+const bundlePath = join(import.meta.env.BASE_URL, "_pagefind/");
+const divProps = {
+  ...(id ? { id } : {}),
+  ...(className ? { class: className } : {}),
+};
+---
+
+<div {...divProps} data-pagefind-ui data-bundle-path={bundlePath}></div>
+<script>
+  import { PagefindUI } from "@pagefind/default-ui";
+  window.addEventListener("DOMContentLoaded", () => {
+    const selector = "[data-pagefind-ui]";
+    const el = document.querySelector(selector);
+    const bundlePath = el?.getAttribute("data-bundle-path");
+    new PagefindUI({
+      element: selector,
+      bundlePath,
+    });
+  });
+</script>
