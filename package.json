@@ -1,0 +1,62 @@
+{
+  "name": "astro-pagefind",
+  "version": "0.0.0-development",
+  "description": "Astro integration for Pagefind static site search",
+  "type": "module",
+  "module": "./src/index.ts",
+  "types": "./src/index.ts",
+  "exports": {
+    ".": {
+      "import": "./src/index.ts",
+      "types": "./src/index.ts"
+    },
+    "./Search.astro": {
+      "import": "./src/components/Search.astro"
+    }
+  },
+  "files": [
+    "src"
+  ],
+  "scripts": {
+    "astro": "astro",
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro check && tsc --noEmit && astro build",
+    "preview": "astro preview",
+    "semantic-release": "semantic-release",
+    "prepare": "husky install"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/shishkin/astro-pagefind.git"
+  },
+  "homepage": "https://github.com/shishkin/astro-pagefind",
+  "keywords": [
+    "astro",
+    "astro-component",
+    "withastro",
+    "pagefind",
+    "search"
+  ],
+  "author": "Sergey Shishkin <sergey@shishkin.org>",
+  "license": "MIT",
+  "peerDependencies": {
+    "astro": "^2.0.4"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^17.3.0",
+    "@commitlint/config-conventional": "^17.3.0",
+    "@semantic-release/changelog": "^6.0.2",
+    "@semantic-release/git": "^10.0.1",
+    "astro": "^2.0.4",
+    "husky": "^8.0.2",
+    "prettier": "^2.8.1",
+    "semantic-release": "^19.0.5",
+    "typescript": "^4.9.4"
+  },
+  "dependencies": {
+    "@pagefind/default-ui": "^0.11.0",
+    "pagefind": "^0.11.0",
+    "sirv": "^2.0.2"
+  }
+}
