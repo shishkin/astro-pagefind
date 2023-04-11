@@ -1,3 +1,16 @@
+# [1.1.0](https://github.com/shishkin/astro-pagefind/compare/v1.0.1...v1.1.0) (2023-04-11)
+
+
+### Bug Fixes
+
+* **deps:** update dependency @pagefind/default-ui to ^0.12.0 ([1617c81](https://github.com/shishkin/astro-pagefind/commit/1617c8190851331466c182cc60cd24e58a5f3361))
+* **deps:** update dependency pagefind to ^0.12.0 ([1e775de](https://github.com/shishkin/astro-pagefind/commit/1e775de504d1b7d7e1dee8e31cf822046e0298c5))
+
+
+### Features
+
+* support multiple component instances ([48edc2a](https://github.com/shishkin/astro-pagefind/commit/48edc2ac4e927b207e68ac898d40933727378ec6))
+
 ## [1.0.1](https://github.com/shishkin/astro-pagefind/compare/v1.0.0...v1.0.1) (2023-02-17)
 
 
