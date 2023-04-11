@@ -49,11 +49,11 @@
     "@commitlint/config-conventional": "^17.4.4",
     "@semantic-release/changelog": "^6.0.3",
     "@semantic-release/git": "^10.0.1",
-    "astro": "^2.2.0",
+    "astro": "^2.2.1",
     "husky": "^8.0.3",
     "prettier": "^2.8.7",
     "semantic-release": "^21.0.1",
-    "typescript": "^5.0.3"
+    "typescript": "^5.0.4"
   },
   "dependencies": {
     "@pagefind/default-ui": "^0.12.0",
