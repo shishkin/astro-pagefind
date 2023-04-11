@@ -10,6 +10,8 @@
 - Build pagefind index upon static build
 - Serve previously prebuilt search index in `astro dev` mode
 - Search Astro component
+- Supports customized base URL path
+- Supports multiple instances of the component on a page
 
 ## Usage
 

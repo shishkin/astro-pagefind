@@ -15,12 +15,18 @@ const divProps = {
 <script>
   import { PagefindUI } from "@pagefind/default-ui";
   window.addEventListener("DOMContentLoaded", () => {
-    const selector = "[data-pagefind-ui]";
-    const el = document.querySelector(selector);
-    const bundlePath = el?.getAttribute("data-bundle-path");
-    new PagefindUI({
-      element: selector,
-      bundlePath,
-    });
+    const allSelector = "[data-pagefind-ui]";
+    for (const el of document.querySelectorAll(allSelector)) {
+      const elSelector = [
+        ...(el.id ? [`#${el.id}`] : []),
+        ...[...el.classList.values()].map((c) => `.${c}`),
+        allSelector,
+      ].join("");
+      const bundlePath = el.getAttribute("data-bundle-path");
+      new PagefindUI({
+        element: elSelector,
+        bundlePath,
+      });
+    }
   });
 </script>

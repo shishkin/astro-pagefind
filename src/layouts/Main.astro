@@ -12,11 +12,12 @@ import Search from "../components/Search.astro";
   <body>
     <header>
       <nav>
-        <Search id="search" className="pagefind-ui" />
+        <Search id="search1" className="pagefind-ui yellow" />
       </nav>
     </header>
     <main>
       <slot />
+      <Search id="search2" className="pagefind-ui red" />
     </main>
   </body>
 </html>
@@ -26,11 +27,10 @@ import Search from "../components/Search.astro";
     place-items: center;
   }
 
-  #search {
+  .pagefind-ui {
     --pagefind-ui-scale: 0.75;
     --pagefind-ui-primary: navy;
     --pagefind-ui-text: black;
-    --pagefind-ui-background: lightyellow;
     --pagefind-ui-border: slategrey;
     --pagefind-ui-border-width: 1px;
     --pagefind-ui-border-radius: 0.25rem;
@@ -39,7 +39,16 @@ import Search from "../components/Search.astro";
     width: 50%;
   }
 
-  #search .pagefind-ui__drawer:not(.pagefind-ui__hidden) {
+  .pagefind-ui.yellow {
+    --pagefind-ui-background: lightyellow;
+  }
+
+  .pagefind-ui.red {
+    --pagefind-ui-background: peachpuff;
+    width: 100%;
+  }
+
+  .pagefind-ui .pagefind-ui__drawer:not(.pagefind-ui__hidden) {
     position: absolute;
     left: 0;
     right: 0;
@@ -54,11 +63,11 @@ import Search from "../components/Search.astro";
     background-color: var(--pagefind-ui-background);
   }
 
-  #search .pagefind-ui__result-link {
+  .pagefind-ui .pagefind-ui__result-link {
     color: var(--pagefind-ui-primary);
   }
 
-  #search .pagefind-ui__result-excerpt {
+  .pagefind-ui .pagefind-ui__result-excerpt {
     color: var(--pagefind-ui-text);
   }
 </style>
