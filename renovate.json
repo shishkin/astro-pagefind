@@ -1,4 +1,13 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
-  "extends": ["config:base", ":semanticCommits"]
+  "extends": [
+    "config:base",
+    ":semanticCommits",
+    ":automergeMinor",
+    ":automergeLinters",
+    ":automergeTesters",
+    ":automergeTypes",
+    "helpers:disableTypesNodeMajor"
+  ],
+  "schedule": ["every weekend on the 3rd week of the month"],
 }
