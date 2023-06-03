@@ -12,6 +12,7 @@
 - Search Astro component
 - Supports customized base URL path
 - Supports multiple instances of the component on a page
+- Supports pre-filled search query
 
 ## Usage
 
@@ -48,3 +49,21 @@ import Search from "astro-pagefind/components/Search";
 ```
 
 See [Main.layout](./src/layouts/Main.astro) for a usage example.
+
+### Pre-filled Search Query
+
+In SSR mode Astro provides access to URL query parameters which can be used to pre-fill search query via a prop:
+
+```astro
+---
+import Search from "astro-pagefind/components/Search";
+
+export const prerender = false;
+
+const q = Astro.url.searchParams.get("q") ?? undefined;
+---
+
+<Search query={q} />
+```
+
+See [search.astro](./src/pages/search.astro) for a full example.
