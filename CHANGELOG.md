@@ -1,3 +1,10 @@
+# [1.2.0](https://github.com/shishkin/astro-pagefind/compare/v1.1.0...v1.2.0) (2023-06-03)
+
+
+### Features
+
+* pre-filled search query ([10f26d4](https://github.com/shishkin/astro-pagefind/commit/10f26d4d2efca4dbb25a2aeb81cb7b4ed13834d5)), closes [#11](https://github.com/shishkin/astro-pagefind/issues/11)
+
 # [1.1.0](https://github.com/shishkin/astro-pagefind/compare/v1.0.1...v1.1.0) (2023-04-11)
 
 
