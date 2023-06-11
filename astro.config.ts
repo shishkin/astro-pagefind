@@ -5,9 +5,6 @@ import node from "@astrojs/node";
 export default defineConfig({
   base: "/something/",
   output: "hybrid",
-  experimental: {
-    hybridOutput: true,
-  },
   build: {
     format: "file",
   },
