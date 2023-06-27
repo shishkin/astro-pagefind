@@ -1,3 +1,14 @@
+## [1.2.1](https://github.com/shishkin/astro-pagefind/compare/v1.2.0...v1.2.1) (2023-06-27)
+
+
+### Bug Fixes
+
+* config type updates ([5c99362](https://github.com/shishkin/astro-pagefind/commit/5c9936253ea3842ca91df8e11a2faae747243a29))
+* **deps:** update dependency @astrojs/node to v5.2.0 ([bda147c](https://github.com/shishkin/astro-pagefind/commit/bda147c676401765e0ba479bcae750ea10208986))
+* **deps:** update dependency sirv to v2.0.3 ([c89843d](https://github.com/shishkin/astro-pagefind/commit/c89843dfbdc9b1b71e5d44071e5763146436d257))
+* remove use of path.join in component ([43f4762](https://github.com/shishkin/astro-pagefind/commit/43f47620c3d875f2ff29dee5d1d9fe697d4f2444))
+* serve static files from client output dir ([e402a16](https://github.com/shishkin/astro-pagefind/commit/e402a1643388b5d68b8174256ba764c7bf1811f9))
+
 # [1.2.0](https://github.com/shishkin/astro-pagefind/compare/v1.1.0...v1.2.0) (2023-06-03)
 
 
