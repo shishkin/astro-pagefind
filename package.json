@@ -49,7 +49,7 @@
     "@commitlint/config-conventional": "17.6.6",
     "@semantic-release/changelog": "6.0.3",
     "@semantic-release/git": "10.0.1",
-    "astro": "2.6.4",
+    "astro": "2.8.0",
     "husky": "8.0.3",
     "prettier": "2.8.8",
     "semantic-release": "21.0.7",
