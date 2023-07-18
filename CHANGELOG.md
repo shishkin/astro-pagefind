@@ -1,3 +1,11 @@
+## [1.2.2](https://github.com/shishkin/astro-pagefind/compare/v1.2.1...v1.2.2) (2023-07-18)
+
+
+### Bug Fixes
+
+* **deps:** update dependency @astrojs/node to v5.3.0 ([9810571](https://github.com/shishkin/astro-pagefind/commit/9810571c52d6380a155a1f09261915538229209e))
+* outDir handling in adapters ([2c71bdd](https://github.com/shishkin/astro-pagefind/commit/2c71bdd7bdc493ad68e83dd120b54c9d9260c778))
+
 ## [1.2.1](https://github.com/shishkin/astro-pagefind/compare/v1.2.0...v1.2.1) (2023-06-27)
 
 
