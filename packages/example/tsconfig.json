@@ -2,11 +2,12 @@
   "extends": "astro/tsconfigs/strictest",
   "compilerOptions": {
     "moduleResolution": "bundler",
+    "exactOptionalPropertyTypes": false,
     "baseUrl": ".",
     "paths": {
       "~/*": ["src/*"]
     }
   },
-  "include": ["src/", "./*.ts"],
+  "include": ["src/"],
   "exclude": ["node_modules"]
 }

@@ -4,6 +4,6 @@
     "moduleResolution": "bundler",
     "baseUrl": "."
   },
-  "include": ["src/", "./*.ts", "./*.json", "./*.cjs"],
+  "include": ["src/", "./*.cjs"],
   "exclude": ["node_modules"]
 }
