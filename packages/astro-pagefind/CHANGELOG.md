@@ -1,3 +1,10 @@
+## [1.2.3](https://github.com/shishkin/astro-pagefind/compare/v1.2.2...v1.2.3) (2023-07-22)
+
+
+### Bug Fixes
+
+* component exports ([f31b3e1](https://github.com/shishkin/astro-pagefind/commit/f31b3e1d99b4f81c423d23f5dc0fe3c43e32b1ea))
+
 ## [1.2.2](https://github.com/shishkin/astro-pagefind/compare/v1.2.1...v1.2.2) (2023-07-18)
 
 
