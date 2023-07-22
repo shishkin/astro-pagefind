@@ -16,10 +16,6 @@ module.exports = {
         extraFileExtensions: [".astro"],
       },
     },
-    {
-      files: ["*.ts"],
-      parser: "@typescript-eslint/parser",
-    },
   ],
   rules: {
     "prettier/prettier": "error",
