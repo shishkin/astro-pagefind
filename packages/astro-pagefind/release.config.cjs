@@ -1,6 +1,6 @@
 /** @type {import("semantic-release").Config} */
 module.exports = {
-  branches: ["structure"],
+  branches: ["main"],
   plugins: [
     "@semantic-release/commit-analyzer",
     "@semantic-release/release-notes-generator",
