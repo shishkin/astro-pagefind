@@ -1,0 +1,51 @@
+{
+  "name": "astro-pagefind",
+  "version": "0.0.0-development",
+  "description": "Astro integration for Pagefind static site search",
+  "type": "module",
+  "main": "./src/index.ts",
+  "types": "./src/index.ts",
+  "exports": {
+    ".": "./src/index.ts",
+    "./components/Search": "./src/components/Search.astro"
+  },
+  "files": [
+    "src"
+  ],
+  "scripts": {
+    "build": "tsc --noEmit",
+    "release": "semantic-release"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/shishkin/astro-pagefind.git"
+  },
+  "homepage": "https://github.com/shishkin/astro-pagefind",
+  "keywords": [
+    "astro",
+    "astro-component",
+    "astro-integration",
+    "withastro",
+    "pagefind",
+    "search",
+    "ui"
+  ],
+  "author": "Sergey Shishkin <sergey@shishkin.org>",
+  "license": "MIT",
+  "peerDependencies": {
+    "astro": "^2.0.4"
+  },
+  "devDependencies": {
+    "@semantic-release/changelog": "6.0.3",
+    "@semantic-release/git": "10.0.1",
+    "@types/semantic-release": "20.0.1",
+    "astro": "2.9.1",
+    "semantic-release": "21.0.7",
+    "typescript": "5.1.6"
+  },
+  "dependencies": {
+    "@pagefind/default-ui": "^0.12.0",
+    "pagefind": "^0.12.0",
+    "sirv": "^2.0.3"
+  }
+}

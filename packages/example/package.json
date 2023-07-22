@@ -1,0 +1,23 @@
+{
+  "name": "example",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "astro": "astro",
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro check && tsc -b && astro build",
+    "preview": "astro preview"
+  },
+  "devDependencies": {
+    "@astrojs/cloudflare": "6.6.2",
+    "@astrojs/netlify": "2.5.0",
+    "@astrojs/node": "5.3.0",
+    "@astrojs/vercel": "3.7.4",
+    "astro": "2.9.1",
+    "typescript": "5.1.6"
+  },
+  "dependencies": {
+    "astro-pagefind": "*"
+  }
+}
