@@ -37,7 +37,7 @@
   "author": "Sergey Shishkin <sergey@shishkin.org>",
   "license": "MIT",
   "peerDependencies": {
-    "astro": "^2.0.4"
+    "astro": "^2.0.4 || ^3.0.7"
   },
   "devDependencies": {
     "@semantic-release/changelog": "6.0.3",
