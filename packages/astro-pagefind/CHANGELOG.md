@@ -1,3 +1,10 @@
+## [1.2.4](https://github.com/shishkin/astro-pagefind/compare/v1.2.3...v1.2.4) (2023-09-14)
+
+
+### Bug Fixes
+
+* allow astro@3 peer dependency ([484bb39](https://github.com/shishkin/astro-pagefind/commit/484bb3919fd7364ce3ba3b97bafa73ba19184b62))
+
 ## [1.2.3](https://github.com/shishkin/astro-pagefind/compare/v1.2.2...v1.2.3) (2023-07-22)
 
 
