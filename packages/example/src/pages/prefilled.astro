@@ -1,9 +1,15 @@
 ---
-import SearchComponent from "astro-pagefind/components/Search";
+import Search from "astro-pagefind/components/Search";
 
-export const prerender = false;
-
-const q = Astro.url.searchParams.get("q") ?? undefined;
+/**
+ * In SSR mode use this instead:
+ *
+ * ```ts
+ * export const prerender = false;
+ * const q = Astro.url.searchParams.get("q") ?? undefined;
+ * ```
+ */
+const q = "astro";
 ---
 
 <!doctype html>
@@ -16,6 +22,6 @@ const q = Astro.url.searchParams.get("q") ?? undefined;
   <body>
     <h1>Pre-filled Search</h1>
     <p>Searching for: {q}</p>
-    <SearchComponent id="search" query={q} />
+    <Search id="search" query={q} />
   </body>
 </html>

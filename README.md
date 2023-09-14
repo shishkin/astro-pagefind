@@ -66,4 +66,4 @@ const q = Astro.url.searchParams.get("q") ?? undefined;
 <Search query={q} />
 ```
 
-See [search.astro](./src/pages/search.astro) for a full example.
+See [prefilled.astro](./src/pages/prefilled.astro) for a full example.

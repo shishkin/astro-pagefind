@@ -6,4 +6,4 @@ layout: ~/layouts/Main.astro
 
 [Astro](https://astro.build) integration for [Pagefind](https://pagefind.app/) static site search.
 
-Example of [Pre-filled Search](search?q=page).
+Example of [Pre-filled Search](prefilled).
