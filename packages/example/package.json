@@ -10,11 +10,8 @@
     "preview": "astro preview"
   },
   "devDependencies": {
-    "@astrojs/cloudflare": "6.8.1",
-    "@astrojs/netlify": "2.6.0",
-    "@astrojs/node": "5.3.6",
-    "@astrojs/vercel": "3.8.2",
-    "astro": "2.10.15",
+    "@astrojs/check": "0.2.0",
+    "astro": "3.1.0",
     "typescript": "5.2.2"
   },
   "dependencies": {
