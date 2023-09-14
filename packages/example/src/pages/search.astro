@@ -1,12 +1,12 @@
 ---
-import Search from "astro-pagefind/components/Search";
+import SearchComponent from "astro-pagefind/components/Search";
 
 export const prerender = false;
 
 const q = Astro.url.searchParams.get("q") ?? undefined;
 ---
 
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -16,6 +16,6 @@ const q = Astro.url.searchParams.get("q") ?? undefined;
   <body>
     <h1>Pre-filled Search</h1>
     <p>Searching for: {q}</p>
-    <Search id="search" query={q} />
+    <SearchComponent id="search" query={q} />
   </body>
 </html>
