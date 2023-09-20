@@ -53,7 +53,7 @@ export default function pagefind(): AstroIntegration {
           );
           return;
         }
-        const cmd = `npx pagefind --source "${outDir}"`;
+        const cmd = `npx pagefind --site "${outDir}"`;
         execSync(cmd, {
           stdio: [process.stdin, process.stdout, process.stderr],
         });
