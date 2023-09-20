@@ -39,7 +39,7 @@ export default function pagefind(): AstroIntegration {
           etag: true,
         });
         server.middlewares.use((req, res, next) => {
-          if (req.url?.startsWith("/_pagefind/")) {
+          if (req.url?.startsWith("/pagefind/")) {
             serve(req, res, next);
           } else {
             next();
