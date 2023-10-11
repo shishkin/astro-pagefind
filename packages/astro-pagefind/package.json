@@ -43,14 +43,14 @@
     "@astrojs/check": "0.2.0",
     "@semantic-release/changelog": "6.0.3",
     "@semantic-release/git": "10.0.1",
-    "@types/semantic-release": "20.0.1",
-    "astro": "3.1.0",
-    "semantic-release": "22.0.0",
+    "@types/semantic-release": "20.0.2",
+    "astro": "3.2.4",
+    "semantic-release": "22.0.5",
     "typescript": "5.2.2"
   },
   "dependencies": {
-    "@pagefind/default-ui": "^1.0.0",
-    "pagefind": "^1.0.0",
+    "@pagefind/default-ui": "^1.0.3",
+    "pagefind": "^1.0.3",
     "sirv": "^2.0.3"
   }
 }
