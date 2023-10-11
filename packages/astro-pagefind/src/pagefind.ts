@@ -39,7 +39,7 @@ export default function pagefind(): AstroIntegration {
           etag: true,
         });
         server.middlewares.use((req, res, next) => {
-          if (req.url?.startsWith("/_pagefind/")) {
+          if (req.url?.startsWith("/pagefind/")) {
             serve(req, res, next);
           } else {
             next();
@@ -53,7 +53,7 @@ export default function pagefind(): AstroIntegration {
           );
           return;
         }
-        const cmd = `npx pagefind --source "${outDir}"`;
+        const cmd = `npx pagefind --site "${outDir}"`;
         execSync(cmd, {
           stdio: [process.stdin, process.stdout, process.stderr],
         });
