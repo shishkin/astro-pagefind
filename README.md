@@ -45,7 +45,7 @@ Add search component on a page:
 import Search from "astro-pagefind/components/Search";
 ---
 
-<Search />
+<Search id="search" className="pagefind-ui" uiOptions={{ showImages: false }} />
 ```
 
 See [Main.layout](./src/layouts/Main.astro) for a usage example.

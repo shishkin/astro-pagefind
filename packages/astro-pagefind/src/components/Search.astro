@@ -5,17 +5,22 @@ export interface Props {
   readonly id?: string;
   readonly className?: string;
   readonly query?: string;
+  readonly uiOptions?: Record<string, any>;
 }
 
-const { id, className, query } = Astro.props as Props;
+const { id, className, query, uiOptions = {} } = Astro.props as Props;
 const bundlePath = `${import.meta.env.BASE_URL}pagefind/`;
-const divProps = {
-  ...(id ? { id } : {}),
-  ...(className ? { class: className } : {}),
-};
 ---
 
-<div {...divProps} data-pagefind-ui data-bundle-path={bundlePath} data-query={query}></div>
+<div
+  id={id}
+  class:list={[className]}
+  data-pagefind-ui
+  data-bundle-path={bundlePath}
+  data-query={query}
+  data-ui-options={JSON.stringify(uiOptions)}
+>
+</div>
 <script>
   import { PagefindUI } from "@pagefind/default-ui";
   window.addEventListener("DOMContentLoaded", () => {
@@ -27,7 +32,9 @@ const divProps = {
         allSelector,
       ].join("");
       const bundlePath = el.getAttribute("data-bundle-path");
+      const opts = JSON.parse(el.getAttribute("data-ui-options") ?? "{}");
       new PagefindUI({
+        ...opts,
         element: elSelector,
         bundlePath,
       });
