@@ -43,9 +43,9 @@
     "@astrojs/check": "0.3.1",
     "@semantic-release/changelog": "6.0.3",
     "@semantic-release/git": "10.0.1",
-    "@types/semantic-release": "20.0.4",
+    "@types/semantic-release": "20.0.5",
     "astro": "3.5.3",
-    "semantic-release": "22.0.5",
+    "semantic-release": "22.0.7",
     "typescript": "5.2.2"
   },
   "dependencies": {
