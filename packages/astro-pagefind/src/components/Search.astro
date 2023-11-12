@@ -23,7 +23,7 @@ const bundlePath = `${import.meta.env.BASE_URL}pagefind/`;
 </div>
 <script>
   import { PagefindUI } from "@pagefind/default-ui";
-  window.addEventListener("DOMContentLoaded", () => {
+  window.addEventListener("astro:page-load", () => {
     const allSelector = "[data-pagefind-ui]";
     for (const el of document.querySelectorAll(allSelector)) {
       const elSelector = [
