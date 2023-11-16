@@ -3,7 +3,12 @@ import { fileURLToPath } from "node:url";
 import { execSync } from "child_process";
 import sirv from "sirv";
 
-export default function pagefind(): AstroIntegration {
+export default function pagefind(pagefindConfig: { site?: string; outputSubdir?: string } = {}): AstroIntegration {
+  const {site, outputSubdir = 'pagefind'} = pagefindConfig
+
+  process.env.PAGEFIND_OUTPUT_SUBDIR = outputSubdir
+  process.env.PAGEFIND_SITE = site
+
   let outDir: string;
   return {
     name: "pagefind",
@@ -39,7 +44,7 @@ export default function pagefind(): AstroIntegration {
           etag: true,
         });
         server.middlewares.use((req, res, next) => {
-          if (req.url?.startsWith("/pagefind/")) {
+          if (req.url?.startsWith(`/${outputSubdir}/`)) {
             serve(req, res, next);
           } else {
             next();
@@ -53,7 +58,7 @@ export default function pagefind(): AstroIntegration {
           );
           return;
         }
-        const cmd = `npx pagefind --site "${outDir}"`;
+        const cmd = `npx pagefind --site "${outDir}" --output-subdir "${outputSubdir}"`;
         execSync(cmd, {
           stdio: [process.stdin, process.stdout, process.stderr],
         });

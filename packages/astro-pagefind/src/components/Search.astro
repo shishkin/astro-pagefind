@@ -9,7 +9,9 @@ export interface Props {
 }
 
 const { id, className, query, uiOptions = {} } = Astro.props as Props;
-const bundlePath = `${import.meta.env.BASE_URL}pagefind/`;
+const { PAGEFIND_OUTPUT_SUBDIR = 'pagefind', PAGEFIND_SITE} = process.env;
+
+  const bundlePath = `${import.meta.env.BASE_URL}${PAGEFIND_OUTPUT_SUBDIR}/`;
 ---
 
 <div
