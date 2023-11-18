@@ -45,7 +45,7 @@
     "@semantic-release/git": "10.0.1",
     "@types/semantic-release": "20.0.5",
     "astro": "3.5.5",
-    "semantic-release": "22.0.7",
+    "semantic-release": "22.0.8",
     "typescript": "5.2.2"
   },
   "dependencies": {
