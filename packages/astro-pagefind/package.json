@@ -37,14 +37,14 @@
   "author": "Sergey Shishkin <sergey@shishkin.org>",
   "license": "MIT",
   "peerDependencies": {
-    "astro": "^2.0.4 || ^3.0.0"
+    "astro": "^2.0.4 || ^3.0.0 || ^4.0.0"
   },
   "devDependencies": {
     "@astrojs/check": "0.3.1",
     "@semantic-release/changelog": "6.0.3",
     "@semantic-release/git": "10.0.1",
     "@types/semantic-release": "20.0.6",
-    "astro": "3.6.4",
+    "astro": "4.0.3",
     "semantic-release": "22.0.10",
     "typescript": "5.3.3"
   },
