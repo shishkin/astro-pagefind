@@ -41,6 +41,7 @@
   },
   "devDependencies": {
     "@astrojs/check": "0.3.3",
+    "@astrojs/markdown-remark": "4.0.1",
     "@semantic-release/changelog": "6.0.3",
     "@semantic-release/git": "10.0.1",
     "@types/semantic-release": "20.0.6",
