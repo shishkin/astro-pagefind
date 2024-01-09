@@ -13,6 +13,7 @@
 - Supports customized base URL path
 - Supports multiple instances of the component on a page
 - Supports pre-filled search query
+- Supports [Astro view transitions](https://docs.astro.build/en/guides/view-transitions)
 
 ## Usage
 

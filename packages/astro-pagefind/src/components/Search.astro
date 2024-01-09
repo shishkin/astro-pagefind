@@ -14,7 +14,7 @@ const bundlePath = `${import.meta.env.BASE_URL}pagefind/`;
 
 <div
   id={id}
-  class:list={[className]}
+  class:list={[className, "pagefind-init"]}
   data-pagefind-ui
   data-bundle-path={bundlePath}
   data-query={query}
@@ -23,9 +23,10 @@ const bundlePath = `${import.meta.env.BASE_URL}pagefind/`;
 </div>
 <script>
   import { PagefindUI } from "@pagefind/default-ui";
-  window.addEventListener("DOMContentLoaded", () => {
+
+  function initPageFind() {
     const allSelector = "[data-pagefind-ui]";
-    for (const el of document.querySelectorAll(allSelector)) {
+    for (const el of document.querySelectorAll(`${allSelector}.pagefind-init`)) {
       const elSelector = [
         ...(el.id ? [`#${el.id}`] : []),
         ...[...el.classList.values()].map((c) => `.${c}`),
@@ -38,6 +39,7 @@ const bundlePath = `${import.meta.env.BASE_URL}pagefind/`;
         element: elSelector,
         bundlePath,
       });
+      el.classList.remove("pagefind-init");
       const query = el.getAttribute("data-query");
       if (query) {
         const input = el.querySelector<HTMLInputElement>(`input[type="text"]`);
@@ -47,5 +49,8 @@ const bundlePath = `${import.meta.env.BASE_URL}pagefind/`;
         }
       }
     }
-  });
+  }
+
+  document.addEventListener("DOMContentLoaded", initPageFind);
+  document.addEventListener("astro:page-load", initPageFind);
 </script>
