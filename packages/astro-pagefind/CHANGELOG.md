@@ -1,3 +1,15 @@
+# [1.4.0](https://github.com/shishkin/astro-pagefind/compare/v1.3.0...v1.4.0) (2024-01-09)
+
+
+### Bug Fixes
+
+* **deps:** update pagefind to v1.0.4 ([113f171](https://github.com/shishkin/astro-pagefind/commit/113f171dd061d81a92f1d721a7749e8a96e4524b))
+
+
+### Features
+
+* support view transitions ([6feefb9](https://github.com/shishkin/astro-pagefind/commit/6feefb904eea5c600c0b6f788087e72e6689c606))
+
 # [1.3.0](https://github.com/shishkin/astro-pagefind/compare/v1.2.4...v1.3.0) (2023-10-11)
 
 
