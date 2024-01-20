@@ -41,11 +41,11 @@
   },
   "devDependencies": {
     "@astrojs/check": "0.4.1",
-    "@astrojs/markdown-remark": "4.0.1",
+    "@astrojs/markdown-remark": "4.1.0",
     "@semantic-release/changelog": "6.0.3",
     "@semantic-release/git": "10.0.1",
     "@types/semantic-release": "20.0.6",
-    "astro": "4.1.2",
+    "astro": "4.2.1",
     "semantic-release": "23.0.0",
     "typescript": "5.3.3"
   },
