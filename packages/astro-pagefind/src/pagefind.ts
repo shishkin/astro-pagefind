@@ -29,7 +29,7 @@ export default function pagefind(): AstroIntegration {
       "astro:server:setup": ({ server, logger }) => {
         if (!outDir) {
           logger.warn(
-            "astro-pagefind could reliably determine the output directory. Search assets will not be served.",
+            "astro-pagefind couldn't reliably determine the output directory. Search assets will not be served.",
           );
           return;
         }
@@ -49,7 +49,7 @@ export default function pagefind(): AstroIntegration {
       "astro:build:done": ({ logger }) => {
         if (!outDir) {
           logger.warn(
-            "astro-pagefind could reliably determine the output directory. Search index will not be built.",
+            "astro-pagefind couldn't reliably determine the output directory. Search index will not be built.",
           );
           return;
         }
