@@ -8,9 +8,9 @@ export default function pagefind(): AstroIntegration {
   return {
     name: "pagefind",
     hooks: {
-      "astro:config:setup": ({ config }) => {
+      "astro:config:setup": ({ config, logger }) => {
         if (config.output === "server") {
-          console.warn(
+          logger.warn(
             "Output type `server` does not produce static *.html pages in its output and thus will not work with astro-pagefind integration.",
           );
           return;
@@ -26,9 +26,9 @@ export default function pagefind(): AstroIntegration {
           outDir = fileURLToPath(config.outDir);
         }
       },
-      "astro:server:setup": ({ server }) => {
+      "astro:server:setup": ({ server, logger }) => {
         if (!outDir) {
-          console.warn(
+          logger.warn(
             "astro-pagefind could reliably determine the output directory. Search assets will not be served.",
           );
           return;
@@ -46,13 +46,14 @@ export default function pagefind(): AstroIntegration {
           }
         });
       },
-      "astro:build:done": () => {
+      "astro:build:done": ({ logger }) => {
         if (!outDir) {
-          console.warn(
+          logger.warn(
             "astro-pagefind could reliably determine the output directory. Search index will not be built.",
           );
           return;
         }
+
         const cmd = `npx pagefind --site "${outDir}"`;
         execSync(cmd, {
           stdio: [process.stdin, process.stdout, process.stderr],
