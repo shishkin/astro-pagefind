@@ -49,7 +49,7 @@ import Search from "astro-pagefind/components/Search";
 <Search id="search" className="pagefind-ui" uiOptions={{ showImages: false }} />
 ```
 
-See [Main.layout](./src/layouts/Main.astro) for a usage example.
+See [Main.layout](packages/example/src/layouts/Main.astro) for a usage example.
 
 ### Pre-filled Search Query
 
@@ -67,4 +67,4 @@ const q = Astro.url.searchParams.get("q") ?? undefined;
 <Search query={q} />
 ```
 
-See [prefilled.astro](./src/pages/prefilled.astro) for a full example.
+See [prefilled.astro](packages/example/src/pages/prefilled.astro) for a full example.
