@@ -1,3 +1,18 @@
+# [1.5.0](https://github.com/shishkin/astro-pagefind/compare/v1.4.0...v1.5.0) (2024-03-16)
+
+
+### Bug Fixes
+
+* **deps:** update dependency sirv to v2.0.4 ([47d1fc1](https://github.com/shishkin/astro-pagefind/commit/47d1fc1d3e71bfc13b57fdf07f321ff01f2a75fb))
+* fix typos in error messages ([c7175cb](https://github.com/shishkin/astro-pagefind/commit/c7175cb16216c5a811adb9e0a5992127172d27f2))
+* remove unnecessary type casting in the Search component ([6e794da](https://github.com/shishkin/astro-pagefind/commit/6e794da10a4f7d5d8b08a5acd39b41baad64d077))
+* ui not initialized when document is ready ([68e8e6a](https://github.com/shishkin/astro-pagefind/commit/68e8e6ab9a2a0cd440d0a15de20f12b0e92877c9))
+
+
+### Features
+
+* use AstroIntegrationLogger to log error messages with better formatting ([61254c3](https://github.com/shishkin/astro-pagefind/commit/61254c39d686879049cfe110b1dbe064157a10a0))
+
 # [1.4.0](https://github.com/shishkin/astro-pagefind/compare/v1.3.0...v1.4.0) (2024-01-09)
 
 
