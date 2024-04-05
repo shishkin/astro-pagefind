@@ -1,9 +1,12 @@
 import type { AstroIntegration } from "astro";
 import { fileURLToPath } from "node:url";
-import { execSync } from "child_process";
+import { join } from "node:path";
 import sirv from "sirv";
+import * as pf from "pagefind";
 
-export default function pagefind(): AstroIntegration {
+type PagefindConfig = pf.PagefindServiceConfig;
+
+export default function pagefind(config: PagefindConfig = {}): AstroIntegration {
   let outDir: string;
   return {
     name: "pagefind",
@@ -46,7 +49,7 @@ export default function pagefind(): AstroIntegration {
           }
         });
       },
-      "astro:build:done": ({ logger }) => {
+      "astro:build:done": async ({ logger }) => {
         if (!outDir) {
           logger.warn(
             "astro-pagefind couldn't reliably determine the output directory. Search index will not be built.",
@@ -54,10 +57,33 @@ export default function pagefind(): AstroIntegration {
           return;
         }
 
-        const cmd = `npx pagefind --site "${outDir}"`;
-        execSync(cmd, {
-          stdio: [process.stdin, process.stdout, process.stderr],
+        const { index, errors: createIndexErrors } = await pf.createIndex(config);
+        if (createIndexErrors.length) {
+          logger.warn(
+            `astro-pagefind errored when creating index. Search index will not be built.\n\n${createIndexErrors.join("\n")}`,
+          );
+          await pf.close();
+          return;
+        }
+        const { page_count, errors: addDirectoryErrors } = await index!.addDirectory({ path: outDir });
+        if (addDirectoryErrors.length) {
+          logger.warn(
+            `astro-pagefind errored when adding the output directory. Search index will not be built.\n\n${addDirectoryErrors.join("\n")}`,
+          );
+          await pf.close();
+          return;
+        }
+        logger.info(`astro-pagefind has indexed ${page_count} page(s).`);
+        const { errors: writeFilesErrors } = await index!.writeFiles({
+          outputPath: join(outDir, "pagefind"),
         });
+        if (writeFilesErrors.length) {
+          logger.warn(
+            `astro-pagefind errored when writing files. Search index will not be built.\n\n${writeFilesErrors.join("\n")}`,
+          );
+          await pf.close();
+          return;
+        }
       },
     },
   };
