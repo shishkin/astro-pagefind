@@ -5,6 +5,7 @@
   "schedule": ["every weekend on the 3rd week of the month"],
   "automergeType": "branch",
   "prHourlyLimit": 0,
+  "ignoreDeps": ["eslint"],
   "packageRules": [
     {
       "matchDepTypes": ["devDependencies"],
