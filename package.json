@@ -16,7 +16,7 @@
     "@commitlint/cli": "19.3.0",
     "@commitlint/config-conventional": "19.2.2",
     "@types/eslint": "8.56.10",
-    "@types/prettier": "2.7.3",
+    "@types/prettier": "3.0.0",
     "@typescript-eslint/eslint-plugin": "7.8.0",
     "@typescript-eslint/parser": "7.8.0",
     "eslint": "8.57.0",
