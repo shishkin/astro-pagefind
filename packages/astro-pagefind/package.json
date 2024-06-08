@@ -45,7 +45,7 @@
     "@semantic-release/changelog": "6.0.3",
     "@semantic-release/git": "10.0.1",
     "@types/semantic-release": "20.0.6",
-    "astro": "4.8.6",
+    "astro": "4.10.1",
     "semantic-release": "23.1.1",
     "typescript": "5.4.5"
   },
