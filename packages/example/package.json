@@ -10,8 +10,8 @@
     "preview": "astro preview"
   },
   "devDependencies": {
-    "@astrojs/check": "0.8.1",
-    "astro": "4.11.5",
+    "@astrojs/check": "0.8.2",
+    "astro": "4.12.2",
     "typescript": "5.5.3"
   },
   "dependencies": {
