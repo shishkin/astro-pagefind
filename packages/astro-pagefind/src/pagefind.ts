@@ -6,6 +6,7 @@ import sirv from "sirv";
 
 export default function pagefind(): AstroIntegration {
   let outDir: string;
+  let assets: string | null;
   return {
     name: "pagefind",
     hooks: {
@@ -26,6 +27,11 @@ export default function pagefind(): AstroIntegration {
         } else {
           outDir = fileURLToPath(config.outDir);
         }
+        if (config.build.assetsPrefix) {
+          assets = null;
+        } else {
+          assets = config.build.assets;
+        }
       },
       "astro:server:setup": ({ server, logger }) => {
         if (!outDir) {
@@ -40,7 +46,7 @@ export default function pagefind(): AstroIntegration {
           etag: true,
         });
         server.middlewares.use((req, res, next) => {
-          if (req.url?.startsWith("/pagefind/")) {
+          if (req.url?.startsWith("/pagefind/") || (assets && req.url?.startsWith(`/${assets}/`))) {
             serve(req, res, next);
           } else {
             next();
