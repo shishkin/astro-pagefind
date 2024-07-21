@@ -1,3 +1,15 @@
+# [1.6.0](https://github.com/shishkin/astro-pagefind/compare/v1.5.0...v1.6.0) (2024-07-21)
+
+
+### Bug Fixes
+
+* **deps:** update pagefind to v1.1.0 ([d7c77d3](https://github.com/shishkin/astro-pagefind/commit/d7c77d324fb6ffff0aa91760338e0a2c7d982773))
+
+
+### Features
+
+* replace pagefind cli call with node api ([5188319](https://github.com/shishkin/astro-pagefind/commit/5188319e7e941a901c448cb04ff395a969cdb4ca))
+
 # [1.5.0](https://github.com/shishkin/astro-pagefind/compare/v1.4.0...v1.5.0) (2024-03-16)
 
 
