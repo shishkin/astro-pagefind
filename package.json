@@ -13,17 +13,17 @@
     "prepare": "husky install"
   },
   "devDependencies": {
-    "@commitlint/cli": "19.3.0",
+    "@commitlint/cli": "19.4.0",
     "@commitlint/config-conventional": "19.2.2",
-    "@types/eslint": "8.56.10",
+    "@types/eslint": "8.56.11",
     "@types/prettier": "3.0.0",
-    "@typescript-eslint/eslint-plugin": "7.16.1",
-    "@typescript-eslint/parser": "7.16.1",
+    "@typescript-eslint/eslint-plugin": "7.18.0",
+    "@typescript-eslint/parser": "7.18.0",
     "eslint": "8.57.0",
     "eslint-config-prettier": "9.1.0",
     "eslint-plugin-astro": "1.2.3",
     "eslint-plugin-prettier": "5.2.1",
-    "husky": "9.1.1",
+    "husky": "9.1.4",
     "prettier": "3.3.3",
     "prettier-plugin-astro": "0.14.1"
   },
