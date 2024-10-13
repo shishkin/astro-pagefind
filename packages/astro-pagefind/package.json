@@ -52,6 +52,6 @@
   "dependencies": {
     "@pagefind/default-ui": "^1.0.3",
     "pagefind": "^1.0.3",
-    "sirv": "^2.0.3"
+    "sirv": "^3.0.0"
   }
 }
