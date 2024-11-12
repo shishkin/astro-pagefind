@@ -37,7 +37,7 @@
   "author": "Sergey Shishkin <sergey@shishkin.org>",
   "license": "MIT",
   "peerDependencies": {
-    "astro": "^2.0.4 || ^3.0.0 || ^4.0.0"
+    "astro": "^2.0.4 || ^3.0.0 || ^4.0.0 || ^5.0.0"
   },
   "devDependencies": {
     "@astrojs/check": "0.9.4",
