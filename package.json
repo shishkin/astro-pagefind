@@ -10,13 +10,12 @@
     "lint": "eslint --ext .ts,.js,.astro .",
     "build": "npm run build --workspaces --if-present",
     "release": "npm run release --workspace=astro-pagefind",
-    "prepare": "husky install"
+    "prepare": "husky"
   },
   "devDependencies": {
     "@commitlint/cli": "19.5.0",
     "@commitlint/config-conventional": "19.5.0",
     "@types/eslint": "9.6.1",
-    "@types/prettier": "3.0.0",
     "@typescript-eslint/eslint-plugin": "8.14.0",
     "@typescript-eslint/parser": "8.14.0",
     "eslint": "8.57.0",
