@@ -9,7 +9,7 @@
     "dev": "pnpm run --filter=example dev",
     "lint": "eslint --ext .ts,.js,.astro .",
     "build": "pnpm run -r --if-present build",
-    "release": "npm run --filter=astro-pagefind release",
+    "release": "pnpm run --filter=astro-pagefind release",
     "prepare": "husky"
   },
   "devDependencies": {
