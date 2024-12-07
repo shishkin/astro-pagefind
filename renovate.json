@@ -1,6 +1,10 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
-  "extends": ["config:recommended", ":semanticCommits", "helpers:disableTypesNodeMajor"],
+  "extends": [
+    "config:recommended",
+    ":semanticCommits",
+    "helpers:disableTypesNodeMajor"
+  ],
   "timezone": "Europe/Berlin",
   "schedule": ["every weekend on the 3rd week of the month"],
   "automergeType": "branch",
@@ -18,14 +22,14 @@
       "automerge": true
     },
     {
-      "matchPackagePatterns": ["astro", "@astrojs/"],
       "groupName": "astro",
-      "automerge": true
+      "automerge": true,
+      "matchPackageNames": ["/astro/", "/@astrojs//"]
     },
     {
-      "matchPackagePatterns": ["pagefind", "@pagefind/"],
       "groupName": "pagefind",
-      "automerge": true
+      "automerge": true,
+      "matchPackageNames": ["/pagefind/", "/@pagefind//"]
     }
   ]
 }
