@@ -2,6 +2,7 @@
   "name": "root",
   "private": true,
   "workspaces": [
+    "packages/example-astro4",
     "packages/example",
     "packages/astro-pagefind"
   ],

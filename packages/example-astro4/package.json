@@ -1,0 +1,20 @@
+{
+  "name": "example-astro4",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "astro": "astro",
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro check && tsc -b && astro build",
+    "preview": "astro preview"
+  },
+  "devDependencies": {
+    "@astrojs/check": "0.9.4",
+    "astro": "^4",
+    "typescript": "5.7.2"
+  },
+  "dependencies": {
+    "astro-pagefind": "*"
+  }
+}
