@@ -1,15 +1,9 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
-  "extends": [
-    "config:recommended",
-    ":semanticCommits",
-    "helpers:disableTypesNodeMajor"
-  ],
+  "extends": ["config:best-practices", ":semanticCommits", "helpers:disableTypesNodeMajor"],
   "timezone": "Europe/Berlin",
   "schedule": ["every weekend on the 3rd week of the month"],
   "automergeType": "branch",
-  "prHourlyLimit": 0,
-  "ignoreDeps": ["eslint"],
   "packageRules": [
     {
       "matchDepTypes": ["devDependencies"],
@@ -25,6 +19,12 @@
       "groupName": "astro",
       "automerge": true,
       "matchPackageNames": ["/astro/", "/@astrojs//"]
+    },
+    {
+      "groupName": "astro4",
+      "matchPackageNames": ["/^astro$/"],
+      "matchCurrentVersion": "^4.0.0",
+      "enabled": false
     },
     {
       "groupName": "pagefind",
