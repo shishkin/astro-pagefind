@@ -21,8 +21,8 @@ export default function pagefind(): AstroIntegration {
           outDir = fileURLToPath(new URL(".vercel/output/static/", config.root));
         } else if (config.adapter?.name === "@astrojs/cloudflare") {
           outDir = fileURLToPath(new URL(config.base?.replace(/^\//, ""), config.outDir));
-        } else if (config.adapter?.name === "@astrojs/node" && config.output === "hybrid") {
-          outDir = fileURLToPath(config.build.client!);
+        } else if (config.adapter?.name === "@astrojs/node") {
+          outDir = fileURLToPath(config.build.client);
         } else {
           outDir = fileURLToPath(config.outDir);
         }
