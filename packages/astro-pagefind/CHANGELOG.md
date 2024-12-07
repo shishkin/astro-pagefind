@@ -1,3 +1,17 @@
+# [1.7.0](https://github.com/shishkin/astro-pagefind/compare/v1.6.0...v1.7.0) (2024-12-07)
+
+
+### Bug Fixes
+
+* **deps:** update dependency sirv to v3 ([7375b6e](https://github.com/shishkin/astro-pagefind/commit/7375b6e242d10a5f55dc718d90319c728c57d1ef))
+* **deps:** update pagefind to v1.1.1 ([47d7172](https://github.com/shishkin/astro-pagefind/commit/47d717272191618f055a056542e4344ef1749cc8))
+* **deps:** update pagefind to v1.2.0 ([b229f06](https://github.com/shishkin/astro-pagefind/commit/b229f0663c3d112474191e595501508dfe9e4155))
+
+
+### Features
+
+* update to astro 5 ([bc66993](https://github.com/shishkin/astro-pagefind/commit/bc669936ef65a8e971fe8d663611006c7eb32b4d))
+
 # [1.6.0](https://github.com/shishkin/astro-pagefind/compare/v1.5.0...v1.6.0) (2024-07-21)
 
 
