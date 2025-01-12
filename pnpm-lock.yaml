@@ -73,8 +73,8 @@ importers:
         specifier: 20.0.6
         version: 20.0.6
       astro:
-        specifier: 5.1.1
-        version: 5.1.1(@types/node@22.10.1)(jiti@2.4.1)(rollup@4.28.1)(typescript@5.7.2)(yaml@2.6.1)
+        specifier: 5.1.5
+        version: 5.1.5(@types/node@22.10.1)(jiti@2.4.1)(rollup@4.28.1)(typescript@5.7.2)(yaml@2.6.1)
       semantic-release:
         specifier: 24.2.0
         version: 24.2.0(typescript@5.7.2)
@@ -92,8 +92,8 @@ importers:
         specifier: 0.9.4
         version: 0.9.4(prettier-plugin-astro@0.14.1)(prettier@3.4.2)(typescript@5.7.2)
       astro:
-        specifier: 5.1.1
-        version: 5.1.1(@types/node@22.10.1)(jiti@2.4.1)(rollup@4.28.1)(typescript@5.7.2)(yaml@2.6.1)
+        specifier: 5.1.5
+        version: 5.1.5(@types/node@22.10.1)(jiti@2.4.1)(rollup@4.28.1)(typescript@5.7.2)(yaml@2.6.1)
       typescript:
         specifier: 5.7.2
         version: 5.7.2
@@ -1439,8 +1439,8 @@ packages:
     engines: {node: ^18.17.1 || ^20.3.0 || >=21.0.0, npm: '>=9.6.5', pnpm: '>=7.1.0'}
     hasBin: true
 
-  astro@5.1.1:
-    resolution: {integrity: sha512-prpWC2PRs4P3FKQg6gZaU+VNMqbZi5pDvORGB2nrjfRjkrvF6/l4BqhvkJ6YQ0Ohm5rIMVz8ljgaRI77mLHbwg==}
+  astro@5.1.5:
+    resolution: {integrity: sha512-Q9TE4aNlczxVoPDoXR3UcjLezL+70z0KbTRXovE4ybpx0mgNL1jsmSWtF3UFXB5+GTf9JK7om5fbIaaMReKcUg==}
     engines: {node: ^18.17.1 || ^20.3.0 || >=22.0.0, npm: '>=9.6.5', pnpm: '>=7.1.0'}
     hasBin: true
 
@@ -5504,7 +5504,7 @@ snapshots:
       - terser
       - typescript
 
-  astro@5.1.1(@types/node@22.10.1)(jiti@2.4.1)(rollup@4.28.1)(typescript@5.7.2)(yaml@2.6.1):
+  astro@5.1.5(@types/node@22.10.1)(jiti@2.4.1)(rollup@4.28.1)(typescript@5.7.2)(yaml@2.6.1):
     dependencies:
       '@astrojs/compiler': 2.10.3
       '@astrojs/internal-helpers': 0.4.2
