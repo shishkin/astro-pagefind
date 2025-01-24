@@ -6,5 +6,12 @@ export default defineConfig({
   build: {
     format: "file",
   },
-  integrations: [pagefind()],
+  integrations: [
+    pagefind({
+      // Example of specifying Pagefind config:
+      indexConfig: {
+        keepIndexUrl: true,
+      },
+    }),
+  ],
 });
