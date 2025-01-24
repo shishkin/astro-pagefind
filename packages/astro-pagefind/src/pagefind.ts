@@ -4,7 +4,17 @@ import path from "node:path";
 import { createIndex, type PagefindServiceConfig } from "pagefind";
 import sirv from "sirv";
 
-export default function pagefind(options: PagefindServiceConfig = {}): AstroIntegration {
+/**
+ * Pagefind Astro integration options.
+ */
+export interface PagefindOptions {
+  /**
+   * `PagefindServiceConfig` passed to pagefind's `createIndex`
+   */
+  indexConfig?: PagefindServiceConfig;
+}
+
+export default function pagefind({ indexConfig }: PagefindOptions = {}): AstroIntegration {
   let outDir: string;
   return {
     name: "pagefind",
@@ -55,7 +65,7 @@ export default function pagefind(options: PagefindServiceConfig = {}): AstroInte
           return;
         }
 
-        const { index, errors: createErrors } = await createIndex(options);
+        const { index, errors: createErrors } = await createIndex(indexConfig);
         if (!index) {
           logger.error("Pagefind failed to create index");
           createErrors.forEach((e) => logger.error(e));
