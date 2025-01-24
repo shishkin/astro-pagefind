@@ -1,3 +1,15 @@
+# [1.8.0](https://github.com/shishkin/astro-pagefind/compare/v1.7.0...v1.8.0) (2025-01-24)
+
+
+### Bug Fixes
+
+* **deps:** update pagefind to v1.3.0 ([3a6f83f](https://github.com/shishkin/astro-pagefind/commit/3a6f83f3d12565ec27d379a97c3e6bb26af227ac))
+
+
+### Features
+
+* allow passing index config to pagefind ([ce77290](https://github.com/shishkin/astro-pagefind/commit/ce772902639c0b5a71116cbc7df8ac0333ea52de))
+
 # [1.7.0](https://github.com/shishkin/astro-pagefind/compare/v1.6.0...v1.7.0) (2024-12-07)
 
 
