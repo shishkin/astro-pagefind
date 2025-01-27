@@ -27,9 +27,7 @@ export default function pagefind({ indexConfig }: PagefindOptions = {}): AstroIn
           return;
         }
 
-        if (config.adapter?.name.startsWith("@astrojs/vercel")) {
-          outDir = fileURLToPath(new URL(".vercel/output/static/", config.root));
-        } else if (config.adapter?.name === "@astrojs/cloudflare") {
+        if (config.adapter?.name === "@astrojs/cloudflare") {
           outDir = fileURLToPath(new URL(config.base?.replace(/^\//, ""), config.outDir));
         } else if (config.adapter?.name === "@astrojs/node") {
           outDir = fileURLToPath(config.build.client);
