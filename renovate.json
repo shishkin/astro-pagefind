@@ -16,6 +16,10 @@
       "automerge": true
     },
     {
+      "matchCategories": ["ci"],
+      "automerge": true
+    },
+    {
       "groupName": "astro",
       "automerge": true,
       "matchPackageNames": ["/astro/", "/@astrojs//"]
