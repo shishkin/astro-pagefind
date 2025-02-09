@@ -3,7 +3,7 @@
   "private": true,
   "engines": {
     "node": ">=18",
-    "pnpm": "^9"
+    "pnpm": "^10.0.0"
   },
   "scripts": {
     "dev": "pnpm run --filter=example dev",
@@ -27,5 +27,5 @@
     "prettier-plugin-astro": "0.14.1"
   },
   "dependencies": {},
-  "packageManager": "pnpm@9.15.3+sha512.1f79bc245a66eb0b07c5d4d83131240774642caaa86ef7d0434ab47c0d16f66b04e21e0c086eb61e62c77efc4d7f7ec071afad3796af64892fae66509173893a"
+  "packageManager": "pnpm@10.2.1+sha512.398035c7bd696d0ba0b10a688ed558285329d27ea994804a52bad9167d8e3a72bcb993f9699585d3ca25779ac64949ef422757a6c31102c12ab932e5cbe5cc92"
 }
