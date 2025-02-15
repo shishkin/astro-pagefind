@@ -73,8 +73,8 @@ importers:
         specifier: 20.0.6
         version: 20.0.6
       astro:
-        specifier: 5.2.5
-        version: 5.2.5(@types/node@22.10.1)(jiti@2.4.1)(rollup@4.34.6)(typescript@5.7.3)(yaml@2.6.1)
+        specifier: 5.3.0
+        version: 5.3.0(@types/node@22.10.1)(jiti@2.4.1)(rollup@4.34.6)(typescript@5.7.3)(yaml@2.6.1)
       semantic-release:
         specifier: 24.2.2
         version: 24.2.2(typescript@5.7.3)
@@ -92,8 +92,8 @@ importers:
         specifier: 0.9.4
         version: 0.9.4(prettier-plugin-astro@0.14.1)(prettier@3.5.0)(typescript@5.7.3)
       astro:
-        specifier: 5.2.5
-        version: 5.2.5(@types/node@22.10.1)(jiti@2.4.1)(rollup@4.34.6)(typescript@5.7.3)(yaml@2.6.1)
+        specifier: 5.3.0
+        version: 5.3.0(@types/node@22.10.1)(jiti@2.4.1)(rollup@4.34.6)(typescript@5.7.3)(yaml@2.6.1)
       typescript:
         specifier: 5.7.3
         version: 5.7.3
@@ -1486,8 +1486,8 @@ packages:
     engines: {node: ^18.17.1 || ^20.3.0 || >=21.0.0, npm: '>=9.6.5', pnpm: '>=7.1.0'}
     hasBin: true
 
-  astro@5.2.5:
-    resolution: {integrity: sha512-AYXyYkc+c5xbKTm48FyQA91y81nXyNPAaoyafR0LUugE4lAwuvIUcXDBfMzmbuP1lGRvsE33G2oypv6gbGaPFg==}
+  astro@5.3.0:
+    resolution: {integrity: sha512-e88l/Yk/6enR/ZDddLbqtM+oblBFk5mneNSmNesyVYGL/6Dj4UA67GPAZOk79VxT5dbLlclZSyyw/wlxN1aj3A==}
     engines: {node: ^18.17.1 || ^20.3.0 || >=22.0.0, npm: '>=9.6.5', pnpm: '>=7.1.0'}
     hasBin: true
 
@@ -4192,7 +4192,7 @@ snapshots:
       remark-parse: 11.0.0
       remark-rehype: 11.1.1
       remark-smartypants: 3.0.2
-      shiki: 1.24.0
+      shiki: 1.29.2
       unified: 11.0.5
       unist-util-remove-position: 5.0.0
       unist-util-visit: 5.0.0
@@ -5626,7 +5626,7 @@ snapshots:
       - terser
       - typescript
 
-  astro@5.2.5(@types/node@22.10.1)(jiti@2.4.1)(rollup@4.34.6)(typescript@5.7.3)(yaml@2.6.1):
+  astro@5.3.0(@types/node@22.10.1)(jiti@2.4.1)(rollup@4.34.6)(typescript@5.7.3)(yaml@2.6.1):
     dependencies:
       '@astrojs/compiler': 2.10.3
       '@astrojs/internal-helpers': 0.5.1
@@ -7549,7 +7549,7 @@ snapshots:
     dependencies:
       find-up-simple: 1.0.0
       find-yarn-workspace-root2: 1.2.16
-      which-pm: 3.0.0
+      which-pm: 3.0.1
 
   preferred-pm@4.1.1:
     dependencies:
