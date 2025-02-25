@@ -1,3 +1,10 @@
+## [1.8.1](https://github.com/shishkin/astro-pagefind/compare/v1.8.0...v1.8.1) (2025-02-25)
+
+
+### Bug Fixes
+
+* 🐛 Fix pages not indexing when using `@astrojs/vercel` 8.0.3 and higher ([d78cebf](https://github.com/shishkin/astro-pagefind/commit/d78cebf3f4f44eff582cb4e23741c450d8e9457e))
+
 # [1.8.0](https://github.com/shishkin/astro-pagefind/compare/v1.7.0...v1.8.0) (2025-01-24)
 
 
