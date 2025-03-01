@@ -15,7 +15,6 @@ export interface PagefindOptions {
 }
 
 export default function pagefind({ indexConfig }: PagefindOptions = {}): AstroIntegration {
-  let outDir: string;
   return {
     name: "pagefind",
     hooks: {
@@ -24,25 +23,11 @@ export default function pagefind({ indexConfig }: PagefindOptions = {}): AstroIn
           logger.warn(
             "Output type `server` does not produce static *.html pages in its output and thus will not work with astro-pagefind integration.",
           );
-          return;
-        }
-
-        if (config.adapter?.name === "@astrojs/cloudflare") {
-          outDir = fileURLToPath(new URL(config.base?.replace(/^\//, ""), config.outDir));
-        } else if (config.adapter?.name === "@astrojs/node") {
-          outDir = fileURLToPath(config.build.client);
-        } else {
-          outDir = fileURLToPath(config.outDir);
         }
       },
       "astro:server:setup": ({ server, logger }) => {
-        if (!outDir) {
-          logger.warn(
-            "astro-pagefind couldn't reliably determine the output directory. Search assets will not be served.",
-          );
-          return;
-        }
-
+        const outDir = path.join(server.config.root, server.config.build.outDir);
+        logger.debug(`Serving pagefind from ${outDir}`);
         const serve = sirv(outDir, {
           dev: true,
           etag: true,
@@ -55,14 +40,8 @@ export default function pagefind({ indexConfig }: PagefindOptions = {}): AstroIn
           }
         });
       },
-      "astro:build:done": async ({ logger }) => {
-        if (!outDir) {
-          logger.warn(
-            "astro-pagefind couldn't reliably determine the output directory. Search index will not be built.",
-          );
-          return;
-        }
-
+      "astro:build:done": async ({ dir, logger }) => {
+        const outDir = fileURLToPath(dir);
         const { index, errors: createErrors } = await createIndex(indexConfig);
         if (!index) {
           logger.error("Pagefind failed to create index");
