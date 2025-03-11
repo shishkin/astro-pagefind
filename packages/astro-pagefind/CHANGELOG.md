@@ -1,3 +1,10 @@
+## [1.8.2](https://github.com/shishkin/astro-pagefind/compare/v1.8.1...v1.8.2) (2025-03-11)
+
+
+### Bug Fixes
+
+* **deps:** update dependency sirv to v3.0.1 ([d51e3ce](https://github.com/shishkin/astro-pagefind/commit/d51e3cead618022609c042e592df49c936b3fefc))
+
 ## [1.8.1](https://github.com/shishkin/astro-pagefind/compare/v1.8.0...v1.8.1) (2025-02-25)
 
 
