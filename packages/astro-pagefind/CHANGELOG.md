@@ -1,3 +1,10 @@
+## [1.8.3](https://github.com/shishkin/astro-pagefind/compare/v1.8.2...v1.8.3) (2025-03-15)
+
+
+### Bug Fixes
+
+* handle adapter client dir in dev ([a40c70c](https://github.com/shishkin/astro-pagefind/commit/a40c70c6d7e4ac2f31532c3d186c167818b7dde9))
+
 ## [1.8.2](https://github.com/shishkin/astro-pagefind/compare/v1.8.1...v1.8.2) (2025-03-11)
 
 
