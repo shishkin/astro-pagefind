@@ -1,0 +1,21 @@
+{
+  "name": "example-vercel",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "astro": "astro",
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro check && tsc -b && astro build",
+    "preview": "astro preview"
+  },
+  "devDependencies": {
+    "@astrojs/check": "0.9.4",
+    "astro": "5.5.2",
+    "typescript": "5.8.2"
+  },
+  "dependencies": {
+    "@astrojs/vercel": "^8.1.2",
+    "astro-pagefind": "workspace:*"
+  }
+}
