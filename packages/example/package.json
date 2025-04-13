@@ -12,7 +12,7 @@
   "devDependencies": {
     "@astrojs/check": "0.9.4",
     "astro": "5.6.1",
-    "typescript": "5.8.2"
+    "typescript": "5.8.3"
   },
   "dependencies": {
     "astro-pagefind": "workspace:*"
