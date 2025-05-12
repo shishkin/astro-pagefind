@@ -1,5 +1,6 @@
 ---
 import "@pagefind/default-ui/css/ui.css";
+import path from "path";
 
 export interface Props {
   readonly id?: string;
@@ -9,7 +10,7 @@ export interface Props {
 }
 
 const { id, className, query, uiOptions = {} } = Astro.props;
-const bundlePath = `${import.meta.env.BASE_URL}pagefind/`;
+const bundlePath = uiOptions.bundlePath || path.join(import.meta.env.BASE_URL, "pagefind/");
 ---
 
 <div
