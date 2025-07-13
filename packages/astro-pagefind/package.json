@@ -44,7 +44,7 @@
     "@astrojs/markdown-remark": "6.3.2",
     "@semantic-release/changelog": "6.0.3",
     "@semantic-release/git": "10.0.1",
-    "@types/semantic-release": "20.0.6",
+    "@types/semantic-release": "21.1.0",
     "astro": "5.10.0",
     "semantic-release": "24.2.7",
     "typescript": "5.8.3"

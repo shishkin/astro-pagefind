@@ -70,8 +70,8 @@ importers:
         specifier: 10.0.1
         version: 10.0.1(semantic-release@24.2.7(typescript@5.8.3))
       '@types/semantic-release':
-        specifier: 20.0.6
-        version: 20.0.6
+        specifier: 21.1.0
+        version: 21.1.0(typescript@5.8.3)
       astro:
         specifier: 5.10.0
         version: 5.10.0(@types/node@22.10.1)(jiti@2.4.1)(rollup@4.43.0)(typescript@5.8.3)(yaml@2.6.1)
@@ -1402,8 +1402,9 @@ packages:
   '@types/normalize-package-data@2.4.4':
     resolution: {integrity: sha512-37i+OaWTh9qeK4LSHPsyRC7NahnGotNuZvjLSgcPzblpHB3rrCJxAOgI5gCdKm7coonsaX1Of0ILiTcnZjbfxA==}
 
-  '@types/semantic-release@20.0.6':
-    resolution: {integrity: sha512-8YJXvsT1FwMrNdZI1e6NBHPzZWendDiUsLryzxurdup+9LnV3s9fF4NgO0D3LkBfLMnocb4Ax6TQ5yFdF3dXGQ==}
+  '@types/semantic-release@21.1.0':
+    resolution: {integrity: sha512-9eGzz0L35u5W7B67x4OpCYfmWUqEre/pqW7PY389vbSFZigBc/Rr9uNNWIkMuy+q6QvfU+nknvXtiwFccDx4+g==}
+    deprecated: This is a stub types definition. semantic-release provides its own type definitions, so you do not need this installed.
 
   '@types/semver@7.5.8':
     resolution: {integrity: sha512-I8EUhyrgfLrcTkzV3TSsGyl1tSuPrEDzr0yd5m90UgNxQkyDXULk3b6MlQqTCpZpNtWe1K0hzclnZkTcLBe2UQ==}
@@ -5858,9 +5859,12 @@ snapshots:
 
   '@types/normalize-package-data@2.4.4': {}
 
-  '@types/semantic-release@20.0.6':
+  '@types/semantic-release@21.1.0(typescript@5.8.3)':
     dependencies:
-      '@types/node': 22.10.1
+      semantic-release: 24.2.7(typescript@5.8.3)
+    transitivePeerDependencies:
+      - supports-color
+      - typescript
 
   '@types/semver@7.5.8': {}
 
