@@ -7,8 +7,5 @@ export default defineConfig({
   adapter: node({
     mode: "standalone",
   }),
-  build: {
-    format: "file",
-  },
   integrations: [pagefind()],
 });
