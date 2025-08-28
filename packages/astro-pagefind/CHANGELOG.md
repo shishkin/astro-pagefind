@@ -1,3 +1,16 @@
+## [1.8.4](https://github.com/shishkin/astro-pagefind/compare/v1.8.3...v1.8.4) (2025-08-28)
+
+
+### Bug Fixes
+
+* **deps:** update astro ([97f0b9b](https://github.com/shishkin/astro-pagefind/commit/97f0b9bf690cf643e4d73f1892f0a79703862366))
+* **deps:** update astro ([b21f86c](https://github.com/shishkin/astro-pagefind/commit/b21f86c2432e6100682b76d0f53b0318eb56aa69))
+* **deps:** update astro ([b76db85](https://github.com/shishkin/astro-pagefind/commit/b76db85e7341cf9a661e91f12e9b7bea6e477b70))
+* **deps:** update astro ([2aaade0](https://github.com/shishkin/astro-pagefind/commit/2aaade0b3160e0c542e7955f33361dbfaa539838))
+* **deps:** update astro ([6f81ab8](https://github.com/shishkin/astro-pagefind/commit/6f81ab8dea5e34abd54ac7f9beb8057c80172f48))
+* **deps:** update astro ([7914a2e](https://github.com/shishkin/astro-pagefind/commit/7914a2e2b7ff208b23316c3e95d32069b8d4bec7))
+* support base URL without trailing slash ([f3db5da](https://github.com/shishkin/astro-pagefind/commit/f3db5da60e719a3607f2cb4e5d2ad23c76031f1b))
+
 ## [1.8.3](https://github.com/shishkin/astro-pagefind/compare/v1.8.2...v1.8.3) (2025-03-15)
 
 
