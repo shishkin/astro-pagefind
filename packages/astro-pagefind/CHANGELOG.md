@@ -1,3 +1,10 @@
+## [1.8.5](https://github.com/shishkin/astro-pagefind/compare/v1.8.4...v1.8.5) (2025-09-08)
+
+
+### Bug Fixes
+
+* use posix variant to join bundle path ([e112b05](https://github.com/shishkin/astro-pagefind/commit/e112b05e50d265149d154fe7a648daffa45430d4))
+
 ## [1.8.4](https://github.com/shishkin/astro-pagefind/compare/v1.8.3...v1.8.4) (2025-08-28)
 
 
