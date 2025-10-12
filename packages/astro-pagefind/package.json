@@ -47,7 +47,7 @@
     "@types/semantic-release": "21.1.0",
     "astro": "5.14.4",
     "semantic-release": "24.2.9",
-    "typescript": "5.9.2"
+    "typescript": "5.9.3"
   },
   "dependencies": {
     "@pagefind/default-ui": "^1.2.0",
