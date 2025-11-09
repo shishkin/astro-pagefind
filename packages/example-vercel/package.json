@@ -15,7 +15,7 @@
     "typescript": "5.9.3"
   },
   "dependencies": {
-    "@astrojs/vercel": "^8.1.2",
+    "@astrojs/vercel": "^9.0.0",
     "astro-pagefind": "workspace:*"
   }
 }
