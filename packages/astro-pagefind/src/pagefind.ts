@@ -12,9 +12,14 @@ export interface PagefindOptions {
    * `PagefindServiceConfig` passed to pagefind's `createIndex`
    */
   indexConfig?: PagefindServiceConfig;
+
+  /**
+   * Custom bundle output directory
+   */
+  bundlePath?: string;
 }
 
-export default function pagefind({ indexConfig }: PagefindOptions = {}): AstroIntegration {
+export default function pagefind({ indexConfig, bundlePath }: PagefindOptions = {}): AstroIntegration {
   let clientDir: string | undefined;
   return {
     name: "pagefind",
@@ -61,7 +66,7 @@ export default function pagefind({ indexConfig }: PagefindOptions = {}): AstroIn
           logger.info(`Pagefind indexed ${page_count} pages`);
         }
         const { outputPath, errors: writeErrors } = await index.writeFiles({
-          outputPath: path.join(outDir, "pagefind"),
+          outputPath: bundlePath || path.join(outDir, "pagefind"),
         });
         if (writeErrors.length) {
           logger.error("Pagefind failed to write index");
