@@ -7,10 +7,16 @@ export interface Props {
   readonly className?: string;
   readonly query?: string;
   readonly uiOptions?: Record<string, any>;
+  readonly bundlePath?: string;
 }
 
-const { id, className, query, uiOptions = {} } = Astro.props;
-const bundlePath = join(import.meta.env.BASE_URL, "pagefind/");
+const {
+  id,
+  className,
+  query,
+  uiOptions = {},
+  bundlePath = join(import.meta.env.BASE_URL, "pagefind/")
+} = Astro.props;
 ---
 
 <div
