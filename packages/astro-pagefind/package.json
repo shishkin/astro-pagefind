@@ -40,12 +40,12 @@
     "astro": "^2.0.4 || ^3 || ^4 || ^5"
   },
   "devDependencies": {
-    "@astrojs/check": "0.9.5",
-    "@astrojs/markdown-remark": "6.3.8",
+    "@astrojs/check": "0.9.6",
+    "@astrojs/markdown-remark": "6.3.10",
     "@semantic-release/changelog": "6.0.3",
     "@semantic-release/git": "10.0.1",
     "@types/semantic-release": "21.1.0",
-    "astro": "5.15.8",
+    "astro": "5.16.5",
     "semantic-release": "25.0.2",
     "typescript": "5.9.3"
   },
