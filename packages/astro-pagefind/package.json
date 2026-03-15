@@ -37,15 +37,15 @@
   "author": "Sergey Shishkin <sergey@shishkin.org>",
   "license": "MIT",
   "peerDependencies": {
-    "astro": "^2.0.4 || ^3 || ^4 || ^5"
+    "astro": "^2.0.4 || ^3 || ^4 || ^5 || ^6.0.0"
   },
   "devDependencies": {
     "@astrojs/check": "0.9.6",
-    "@astrojs/markdown-remark": "6.3.10",
+    "@astrojs/markdown-remark": "7.0.0",
     "@semantic-release/changelog": "6.0.3",
     "@semantic-release/git": "10.0.1",
     "@types/semantic-release": "21.1.0",
-    "astro": "5.17.3",
+    "astro": "6.0.3",
     "semantic-release": "25.0.3",
     "typescript": "5.9.3"
   },
