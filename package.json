@@ -13,12 +13,12 @@
     "prepare": "husky"
   },
   "devDependencies": {
-    "@commitlint/cli": "20.4.1",
-    "@commitlint/config-conventional": "20.4.1",
+    "@commitlint/cli": "20.4.3",
+    "@commitlint/config-conventional": "20.4.3",
     "@types/eslint": "9.6.1",
-    "@typescript-eslint/eslint-plugin": "8.56.0",
-    "@typescript-eslint/parser": "8.56.0",
-    "eslint": "10.0.0",
+    "@typescript-eslint/eslint-plugin": "8.57.0",
+    "@typescript-eslint/parser": "8.57.0",
+    "eslint": "10.0.3",
     "eslint-config-prettier": "10.1.8",
     "eslint-plugin-astro": "1.6.0",
     "eslint-plugin-prettier": "5.5.5",
@@ -27,5 +27,5 @@
     "prettier-plugin-astro": "0.14.1"
   },
   "dependencies": {},
-  "packageManager": "pnpm@10.30.0+sha512.2b5753de015d480eeb88f5b5b61e0051f05b4301808a82ec8b840c9d2adf7748eb352c83f5c1593ca703ff1017295bc3fdd3119abb9686efc96b9fcb18200937"
+  "packageManager": "pnpm@10.32.1+sha512.a706938f0e89ac1456b6563eab4edf1d1faf3368d1191fc5c59790e96dc918e4456ab2e67d613de1043d2e8c81f87303e6b40d4ffeca9df15ef1ad567348f2be"
 }
