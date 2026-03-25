@@ -1,3 +1,14 @@
+## [1.8.6](https://github.com/shishkin/astro-pagefind/compare/v1.8.5...v1.8.6) (2026-03-25)
+
+
+### Bug Fixes
+
+* **deps:** update astro ([72b91c2](https://github.com/shishkin/astro-pagefind/commit/72b91c28439a73ca2d8a69444399176c4d125c7e))
+* **deps:** update astro ([f2882e4](https://github.com/shishkin/astro-pagefind/commit/f2882e487f6b622ffefacf505557d46ebf0f7e17))
+* **deps:** update dependency @astrojs/vercel to v9 ([9992597](https://github.com/shishkin/astro-pagefind/commit/9992597d50262789dcbe259fc08ba9c4027fa6a6))
+* **deps:** update dependency sirv to v3.0.2 ([6f3afc6](https://github.com/shishkin/astro-pagefind/commit/6f3afc6fb10a3d458dd1fc62c76546b464c78044))
+* **deps:** update pagefind to v1.4.0 ([3f1ecb0](https://github.com/shishkin/astro-pagefind/commit/3f1ecb070ef79aa757e57c8943639f5af707b58f))
+
 ## [1.8.5](https://github.com/shishkin/astro-pagefind/compare/v1.8.4...v1.8.5) (2025-09-08)
 
 
