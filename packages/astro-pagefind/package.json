@@ -47,8 +47,8 @@
     "typescript": "6.0.2"
   },
   "dependencies": {
-    "@pagefind/default-ui": "^1.2.0",
-    "pagefind": "^1.2.0",
+    "@pagefind/component-ui": "^1.5.0",
+    "pagefind": "^1.5.0",
     "sirv": "^3.0.0"
   }
 }

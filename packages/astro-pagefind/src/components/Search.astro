@@ -1,61 +1,22 @@
 ---
-import "@pagefind/default-ui/css/ui.css";
+import "@pagefind/component-ui/css/pagefind-component-ui.css";
 import { join } from "node:path/posix";
 
 export interface Props {
-  readonly id?: string;
+  readonly instance?: string;
   readonly className?: string;
-  readonly query?: string;
-  readonly uiOptions?: Record<string, any>;
+  readonly searchboxOptions?: Record<string, any>;
+  readonly configOptions?: Record<string, any>;
 }
 
-const { id, className, query, uiOptions = {} } = Astro.props;
+const { instance, className, searchboxOptions = {}, configOptions = {} } = Astro.props;
 const bundlePath = join(import.meta.env.BASE_URL, "pagefind/");
 ---
 
-<div
-  id={id}
-  class:list={[className, "pagefind-init"]}
-  data-pagefind-ui
-  data-bundle-path={bundlePath}
-  data-query={query}
-  data-ui-options={JSON.stringify(uiOptions)}
->
-</div>
+<pagefind-config {...configOptions} instance={instance} bundle-path={bundlePath}></pagefind-config>
+<pagefind-searchbox {...searchboxOptions} instance={instance} class={className}
+></pagefind-searchbox>
+
 <script>
-  import { PagefindUI } from "@pagefind/default-ui";
-
-  function initPageFind() {
-    const allSelector = "[data-pagefind-ui]";
-    for (const el of document.querySelectorAll(`${allSelector}.pagefind-init`)) {
-      const elSelector = [
-        ...(el.id ? [`#${el.id}`] : []),
-        ...[...el.classList.values()].map((c) => `.${c}`),
-        allSelector,
-      ].join("");
-      const bundlePath = el.getAttribute("data-bundle-path");
-      const opts = JSON.parse(el.getAttribute("data-ui-options") ?? "{}");
-      new PagefindUI({
-        ...opts,
-        element: elSelector,
-        bundlePath,
-      });
-      el.classList.remove("pagefind-init");
-      const query = el.getAttribute("data-query");
-      if (query) {
-        const input = el.querySelector<HTMLInputElement>(`input[type="text"]`);
-        if (input) {
-          input.value = query;
-          input.dispatchEvent(new Event("input", { bubbles: true }));
-        }
-      }
-    }
-  }
-
-  document.addEventListener("astro:page-load", initPageFind);
-  if (document.readyState === "loading") {
-    document.addEventListener("DOMContentLoaded", initPageFind);
-  } else {
-    initPageFind();
-  }
+  import "@pagefind/component-ui";
 </script>
