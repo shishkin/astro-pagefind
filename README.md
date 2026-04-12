@@ -9,10 +9,9 @@
 
 - Build pagefind index upon static build
 - Serve previously prebuilt search index in `astro dev` mode
-- Search Astro component
+- Simple Search Astro component based on Pagefind Searchbox
 - Supports customized base URL path
 - Supports multiple instances of the component on a page
-- Supports pre-filled search query
 - Supports [Astro view transitions](https://docs.astro.build/en/guides/view-transitions)
 - Allows [passing index config](packages/example/astro.config.ts) to pagefind
 
@@ -44,25 +43,29 @@ Add search component on a page:
 import Search from "astro-pagefind/components/Search";
 ---
 
-<Search id="search" className="pagefind-ui" uiOptions={{ showImages: false }} />
+<Search instance="search" className="pagefind-ui" searchboxOptions={{ placeholder: "search" }} />
 ```
 
 See [Main.layout](packages/example/src/layouts/Main.astro) for a usage example.
 
-### Pre-filled Search Query
+### Pagefind 1.5.0
 
-In SSR mode Astro provides access to URL query parameters which can be used to pre-fill search query via a prop:
+Pagefind has introduced [component-based UI](https://pagefind.app/docs/components/) in version 1.5.0.
+It is now much easier to integrate Pagefind UI into Astro projects.
+New users are encouraged to integrate Pagefind UI component directly instead of using the `astro-pagefind/components/Search` component.
+This component is now in maintenance mode and will not receive any new UI-related features anymore.
+
+Here is how to get the searchbox UI on a page:
 
 ```astro
 ---
-import Search from "astro-pagefind/components/Search";
-
-export const prerender = false;
-
-const q = Astro.url.searchParams.get("q") ?? undefined;
+import "@pagefind/component-ui/css/pagefind-component-ui.css";
 ---
 
-<Search query={q} />
+<pagefind-searchbox></pagefind-searchbox>
+<script>
+  import "@pagefind/component-ui";
+</script>
 ```
 
-See [prefilled.astro](packages/example/src/pages/prefilled.astro) for a full example.
+For more details and information on Pagefind UI please consult [Pagefind docs](https://pagefind.app/docs/components/searchbox/) directly.
