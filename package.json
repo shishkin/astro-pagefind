@@ -15,17 +15,7 @@
   "devDependencies": {
     "@commitlint/cli": "20.5.3",
     "@commitlint/config-conventional": "20.5.3",
-    "@types/eslint": "9.6.1",
-    "@typescript-eslint/eslint-plugin": "8.59.2",
-    "@typescript-eslint/parser": "8.59.2",
-    "eslint": "10.3.0",
-    "eslint-config-prettier": "10.1.8",
-    "eslint-plugin-astro": "1.7.0",
-    "eslint-plugin-prettier": "5.5.5",
-    "husky": "9.1.7",
-    "prettier": "3.8.3",
-    "prettier-plugin-astro": "0.14.1"
+    "husky": "9.1.7"
   },
-  "dependencies": {},
   "packageManager": "pnpm@11.0.8"
 }
