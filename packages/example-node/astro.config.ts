@@ -1,5 +1,5 @@
-import { defineConfig } from "astro/config";
 import node from "@astrojs/node";
+import { defineConfig } from "astro/config";
 import pagefind from "astro-pagefind";
 
 export default defineConfig({

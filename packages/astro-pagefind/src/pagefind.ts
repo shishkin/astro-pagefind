@@ -1,6 +1,6 @@
-import type { AstroIntegration } from "astro";
-import { fileURLToPath } from "node:url";
 import path from "node:path";
+import { fileURLToPath } from "node:url";
+import type { AstroIntegration } from "astro";
 import { createIndex, type PagefindServiceConfig } from "pagefind";
 import sirv from "sirv";
 
@@ -49,13 +49,13 @@ export default function pagefind({ indexConfig }: PagefindOptions = {}): AstroIn
         const { index, errors: createErrors } = await createIndex(indexConfig);
         if (!index) {
           logger.error("Pagefind failed to create index");
-          createErrors.forEach((e) => logger.error(e));
+          createErrors.forEach(logger.error);
           return;
         }
         const { page_count, errors: addErrors } = await index.addDirectory({ path: outDir });
         if (addErrors.length) {
           logger.error("Pagefind failed to index files");
-          addErrors.forEach((e) => logger.error(e));
+          addErrors.forEach(logger.error);
           return;
         } else {
           logger.info(`Pagefind indexed ${page_count} pages`);
@@ -65,7 +65,7 @@ export default function pagefind({ indexConfig }: PagefindOptions = {}): AstroIn
         });
         if (writeErrors.length) {
           logger.error("Pagefind failed to write index");
-          writeErrors.forEach((e) => logger.error(e));
+          writeErrors.forEach(logger.error);
           return;
         } else {
           logger.info(`Pagefind wrote index to ${outputPath}`);

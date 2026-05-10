@@ -6,7 +6,7 @@ export interface Props {
   readonly id?: string;
   readonly className?: string;
   readonly query?: string;
-  readonly uiOptions?: Record<string, any>;
+  readonly uiOptions?: Record<string, unknown>;
 }
 
 const { id, className, query, uiOptions = {} } = Astro.props;
