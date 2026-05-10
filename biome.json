@@ -54,8 +54,7 @@
     "experimentalFullSupportEnabled": true,
     "formatter": {
       "enabled": true,
-      "indentScriptAndStyle": true,
-      "selfCloseVoidElements": "always"
+      "indentScriptAndStyle": true
     },
     "linter": {
       "enabled": true
