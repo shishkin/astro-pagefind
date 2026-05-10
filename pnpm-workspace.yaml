@@ -1,2 +1,8 @@
 packages:
   - "packages/*"
+
+allowBuilds:
+  esbuild: true
+  sharp: true
+
+savePrefix: ""
