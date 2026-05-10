@@ -1,25 +1,19 @@
 ---
-import "@pagefind/component-ui/css/pagefind-component-ui.css";
-import { join } from "node:path/posix";
+import PagefindConfig from "./PagefindConfig.astro";
 
 export interface Props {
-  readonly instance?: string;
-  readonly className?: string;
-  readonly searchboxOptions?: Record<string, unknown>;
-  readonly configOptions?: Record<string, unknown>;
+  instance?: string;
+  className?: string;
+  searchboxOptions?: Record<string, unknown>;
+  configOptions?: Record<string, unknown>;
 }
 
 const { instance, className, searchboxOptions = {}, configOptions = {} } = Astro.props;
-const bundlePath = join(import.meta.env.BASE_URL, "pagefind/");
 ---
 
-<pagefind-config {...configOptions} instance={instance} bundle-path={bundlePath}></pagefind-config>
+<PagefindConfig {...configOptions} instance={instance} />
 <pagefind-searchbox
   {...searchboxOptions}
   instance={instance}
   class={className}
 ></pagefind-searchbox>
-
-<script>
-  import "@pagefind/component-ui";
-</script>

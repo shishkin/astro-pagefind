@@ -1,12 +1,13 @@
 ---
+import PagefindConfig from "astro-pagefind/components/PagefindConfig.astro";
 import Search from "astro-pagefind/components/Search.astro";
 ---
 
 <!doctype html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
     <title>astro-pagefind</title>
   </head>
   <body>
@@ -14,14 +15,15 @@ import Search from "astro-pagefind/components/Search.astro";
       <nav>
         <Search
           instance="search1"
-          className="pagefind-ui yellow"
+          className="pagefind-yellow"
           searchboxOptions={{ placeholder: "find it..." }}
         />
       </nav>
     </header>
     <main>
       <slot />
-      <Search instance="search2" className="pagefind-ui red" />
+      <PagefindConfig instance="search2" lang="en" preload={true} />
+      <pagefind-searchbox instance="search2" class="pagefind-red"></pagefind-searchbox>
     </main>
   </body>
 </html>
@@ -31,12 +33,11 @@ import Search from "astro-pagefind/components/Search.astro";
     place-items: center;
   }
 
-  .pagefind-ui.yellow {
-    --pagefind-ui-background: lightyellow;
+  .pagefind-yellow {
+    --pf-background: lightyellow;
   }
 
-  .pagefind-ui.red {
-    --pagefind-ui-background: peachpuff;
-    width: 100%;
+  .pagefind-red {
+    --pf-background: peachpuff;
   }
 </style>
