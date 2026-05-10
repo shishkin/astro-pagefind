@@ -7,12 +7,15 @@
   },
   "scripts": {
     "dev": "pnpm run --filter=example dev",
+    "format:check": "pnpm exec biome format .",
+    "format:write": "pnpm exec biome format --write .",
     "lint": "eslint --ext .ts,.js,.astro .",
     "build": "pnpm run -r --if-present build",
     "release": "pnpm run --filter=astro-pagefind release",
     "prepare": "husky"
   },
   "devDependencies": {
+    "@biomejs/biome": "2.4.14",
     "@commitlint/cli": "20.5.3",
     "@commitlint/config-conventional": "20.5.3",
     "husky": "9.1.7"
