@@ -7,11 +7,7 @@
   "types": "./src/index.ts",
   "exports": {
     ".": "./src/index.ts",
-    "./components/Search": {
-      "types": "./src/components/Search.d.ts",
-      "import": "./src/components/Search.ts",
-      "default": "./src/components/Search.ts"
-    }
+    "./components/*": "./src/components/*"
   },
   "files": [
     "src"
