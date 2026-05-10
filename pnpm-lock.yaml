@@ -40,8 +40,8 @@ importers:
         specifier: 7.1.1
         version: 7.1.1
       astro:
-        specifier: 6.3.0
-        version: 6.3.0(@types/node@25.6.0)(@vercel/functions@3.5.0)(jiti@2.6.1)(rollup@4.60.2)(yaml@2.8.4)
+        specifier: 6.3.1
+        version: 6.3.1(@types/node@25.6.0)(@vercel/functions@3.5.0)(jiti@2.6.1)(rollup@4.60.2)(yaml@2.8.4)
       semantic-release:
         specifier: 25.0.3
         version: 25.0.3(typescript@6.0.3)
@@ -59,8 +59,8 @@ importers:
         specifier: 0.9.9
         version: 0.9.9(prettier@3.8.3)(typescript@6.0.3)
       astro:
-        specifier: 6.3.0
-        version: 6.3.0(@types/node@25.6.0)(@vercel/functions@3.5.0)(jiti@2.6.1)(rollup@4.60.2)(yaml@2.8.4)
+        specifier: 6.3.1
+        version: 6.3.1(@types/node@25.6.0)(@vercel/functions@3.5.0)(jiti@2.6.1)(rollup@4.60.2)(yaml@2.8.4)
       typescript:
         specifier: 6.0.3
         version: 6.0.3
@@ -85,7 +85,7 @@ importers:
     dependencies:
       '@astrojs/node':
         specifier: ^10.0.0
-        version: 10.0.6(astro@6.3.0(@types/node@25.6.0)(@vercel/functions@3.5.0)(jiti@2.6.1)(rollup@4.60.2)(yaml@2.8.4))
+        version: 10.1.0(astro@6.3.1(@types/node@25.6.0)(@vercel/functions@3.5.0)(jiti@2.6.1)(rollup@4.60.2)(yaml@2.8.4))
       astro-pagefind:
         specifier: workspace:*
         version: link:../astro-pagefind
@@ -94,8 +94,8 @@ importers:
         specifier: 0.9.9
         version: 0.9.9(prettier@3.8.3)(typescript@6.0.3)
       astro:
-        specifier: 6.3.0
-        version: 6.3.0(@types/node@25.6.0)(@vercel/functions@3.5.0)(jiti@2.6.1)(rollup@4.60.2)(yaml@2.8.4)
+        specifier: 6.3.1
+        version: 6.3.1(@types/node@25.6.0)(@vercel/functions@3.5.0)(jiti@2.6.1)(rollup@4.60.2)(yaml@2.8.4)
       typescript:
         specifier: 6.0.3
         version: 6.0.3
@@ -104,7 +104,7 @@ importers:
     dependencies:
       '@astrojs/vercel':
         specifier: ^10.0.0
-        version: 10.0.6(astro@6.3.0(@types/node@25.6.0)(@vercel/functions@3.5.0)(jiti@2.6.1)(rollup@4.60.2)(yaml@2.8.4))(rollup@4.60.2)
+        version: 10.0.6(astro@6.3.1(@types/node@25.6.0)(@vercel/functions@3.5.0)(jiti@2.6.1)(rollup@4.60.2)(yaml@2.8.4))(rollup@4.60.2)
       astro-pagefind:
         specifier: workspace:*
         version: link:../astro-pagefind
@@ -113,8 +113,8 @@ importers:
         specifier: 0.9.9
         version: 0.9.9(prettier@3.8.3)(typescript@6.0.3)
       astro:
-        specifier: 6.3.0
-        version: 6.3.0(@types/node@25.6.0)(@vercel/functions@3.5.0)(jiti@2.6.1)(rollup@4.60.2)(yaml@2.8.4)
+        specifier: 6.3.1
+        version: 6.3.1(@types/node@25.6.0)(@vercel/functions@3.5.0)(jiti@2.6.1)(rollup@4.60.2)(yaml@2.8.4)
       typescript:
         specifier: 6.0.3
         version: 6.0.3
@@ -169,10 +169,10 @@ packages:
   '@astrojs/markdown-remark@7.1.1':
     resolution: {integrity: sha512-C6e9BnLGlbdv6bV8MYGeHpHxsUHrCrB4OuRLqi5LI7oiBVcBcqfUN06zpwFQdHgV48QCCrMmLpyqBr7VqC+swA==}
 
-  '@astrojs/node@10.0.6':
-    resolution: {integrity: sha512-e8JmaP4sGxqvdei14kmBzhAqgd5/L5MTExW3Hks5DOt9LDvGzlsFZwnXVXzWPVjW/PErl7t9uLg7xWhCqfkSrA==}
+  '@astrojs/node@10.1.0':
+    resolution: {integrity: sha512-4/2oqUTQ71UQ8+xX249T4l/d0/YkC5ssOVl4R2yQO7Wg4mOnvsq9Z9iaTkWAyElg3lqZq7XRNCEXCmDNiYcW1A==}
     peerDependencies:
-      astro: ^6.0.0
+      astro: ^6.3.0
 
   '@astrojs/prism@3.1.0':
     resolution: {integrity: sha512-Z9IYjuXSArkAUx3N6xj6+Bnvx8OdUSHA8YoOgyepp3+zJmtVYJIl/I18GozdJVW1p5u/CNpl3Km7/gwTJK85cw==}
@@ -1628,8 +1628,8 @@ packages:
     engines: {node: ^18.17.1 || ^20.3.0 || >=21.0.0, npm: '>=9.6.5', pnpm: '>=7.1.0'}
     hasBin: true
 
-  astro@6.3.0:
-    resolution: {integrity: sha512-yhDelVblNzQE4mjS0s27T9BZuAlfRCy+qHk6IlMgSr+ADG5QNpyPkroJAVCFRH08Nf2VhDM5dz6n4GWiTB9TlQ==}
+  astro@6.3.1:
+    resolution: {integrity: sha512-atz6dmkE3Gu24bDgb7g2RE/BYnKqPYIHd6hTUM1UXvu/i7qNZOKLAqEHvgYpv9PQVcgWsXpk4/OOXZ0E/FzvSQ==}
     engines: {node: '>=22.12.0', npm: '>=9.6.5', pnpm: '>=7.1.0'}
     hasBin: true
 
@@ -4283,10 +4283,10 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  '@astrojs/node@10.0.6(astro@6.3.0(@types/node@25.6.0)(@vercel/functions@3.5.0)(jiti@2.6.1)(rollup@4.60.2)(yaml@2.8.4))':
+  '@astrojs/node@10.1.0(astro@6.3.1(@types/node@25.6.0)(@vercel/functions@3.5.0)(jiti@2.6.1)(rollup@4.60.2)(yaml@2.8.4))':
     dependencies:
       '@astrojs/internal-helpers': 0.9.0
-      astro: 6.3.0(@types/node@25.6.0)(@vercel/functions@3.5.0)(jiti@2.6.1)(rollup@4.60.2)(yaml@2.8.4)
+      astro: 6.3.1(@types/node@25.6.0)(@vercel/functions@3.5.0)(jiti@2.6.1)(rollup@4.60.2)(yaml@2.8.4)
       send: 1.2.1
       server-destroy: 1.0.1
     transitivePeerDependencies:
@@ -4320,14 +4320,14 @@ snapshots:
       is-wsl: 3.1.1
       which-pm-runs: 1.1.0
 
-  '@astrojs/vercel@10.0.6(astro@6.3.0(@types/node@25.6.0)(@vercel/functions@3.5.0)(jiti@2.6.1)(rollup@4.60.2)(yaml@2.8.4))(rollup@4.60.2)':
+  '@astrojs/vercel@10.0.6(astro@6.3.1(@types/node@25.6.0)(@vercel/functions@3.5.0)(jiti@2.6.1)(rollup@4.60.2)(yaml@2.8.4))(rollup@4.60.2)':
     dependencies:
       '@astrojs/internal-helpers': 0.9.0
       '@vercel/analytics': 1.6.1
       '@vercel/functions': 3.5.0
       '@vercel/nft': 1.5.0(rollup@4.60.2)
       '@vercel/routing-utils': 5.3.3
-      astro: 6.3.0(@types/node@25.6.0)(@vercel/functions@3.5.0)(jiti@2.6.1)(rollup@4.60.2)(yaml@2.8.4)
+      astro: 6.3.1(@types/node@25.6.0)(@vercel/functions@3.5.0)(jiti@2.6.1)(rollup@4.60.2)(yaml@2.8.4)
       esbuild: 0.27.7
       tinyglobby: 0.2.16
     transitivePeerDependencies:
@@ -5676,7 +5676,7 @@ snapshots:
       - terser
       - typescript
 
-  astro@6.3.0(@types/node@25.6.0)(@vercel/functions@3.5.0)(jiti@2.6.1)(rollup@4.60.2)(yaml@2.8.4):
+  astro@6.3.1(@types/node@25.6.0)(@vercel/functions@3.5.0)(jiti@2.6.1)(rollup@4.60.2)(yaml@2.8.4):
     dependencies:
       '@astrojs/compiler': 4.0.0
       '@astrojs/internal-helpers': 0.9.0
