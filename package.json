@@ -7,10 +7,12 @@
   },
   "scripts": {
     "dev": "pnpm run --filter=example dev",
-    "format:check": "pnpm exec biome format .",
-    "format:write": "pnpm exec biome format --write .",
-    "lint": "eslint --ext .ts,.js,.astro .",
-    "build": "pnpm run -r --if-present build",
+    "format:write": "pnpm exec biome format --write",
+    "check": "pnpm exec biome check --error-on-warnings",
+    "check:fix": "pnpm exec biome check --fix",
+    "check:fix:staged": "pnpm exec biome check --fix --staged --no-errors-on-unmatched",
+    "build:all": "pnpm run -r --if-present build",
+    "build": "pnpm run \"/^(check|build:all)$/\"",
     "release": "pnpm run --filter=astro-pagefind release",
     "prepare": "husky"
   },
