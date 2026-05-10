@@ -25,7 +25,7 @@ importers:
     dependencies:
       '@pagefind/component-ui':
         specifier: ^1.5.0
-        version: 1.5.0
+        version: 1.5.2
       pagefind:
         specifier: ^1.5.0
         version: 1.5.2
@@ -1115,8 +1115,8 @@ packages:
   '@oslojs/encoding@1.1.0':
     resolution: {integrity: sha512-70wQhgYmndg4GCPxPPxPGevRKqTIJ2Nh4OkiMWmDAVYsTQ+Ta7Sq+rPevXyXGdzr30/qZBnyOalCszoMxlyldQ==}
 
-  '@pagefind/component-ui@1.5.0':
-    resolution: {integrity: sha512-lOyk1+7x5Ds0TkAXXR0o6XYITtzmx9QjtrhiPNxI7zuwmO6tr0fqaxTengz3LtvvhHoXawW/h8BEHaTaQMTegQ==}
+  '@pagefind/component-ui@1.5.2':
+    resolution: {integrity: sha512-t8/aE0tan4JiKa6cyhhSt/5qrEVwAK/qlYBHFpnRoq+qaFFVrhmXFFMY+r6n4GJtVIFCN2A5nUpeLN68cYjEjw==}
 
   '@pagefind/darwin-arm64@1.5.2':
     resolution: {integrity: sha512-MXpI+7HsAdPkvJ0gk9xj9g541BCqBZOBbdwj9g6lB5LCj6kSV6nqDSjzcAJwvOsfu0fjwvC8hQU+ecfhp+MpiQ==}
@@ -5099,7 +5099,7 @@ snapshots:
 
   '@oslojs/encoding@1.1.0': {}
 
-  '@pagefind/component-ui@1.5.0':
+  '@pagefind/component-ui@1.5.2':
     dependencies:
       adequate-little-templates: 1.0.2
       bcp-47: 2.1.0
