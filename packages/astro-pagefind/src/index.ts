@@ -1,2 +1,1 @@
-import { default as pagefind } from "./pagefind.js";
-export default pagefind;
+export { default } from "./pagefind.js";

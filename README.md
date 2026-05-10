@@ -40,7 +40,7 @@ Add search component on a page:
 
 ```astro
 ---
-import Search from "astro-pagefind/components/Search";
+import Search from "astro-pagefind/components/Search.astro";
 ---
 
 <Search instance="search" className="pagefind-ui" searchboxOptions={{ placeholder: "search" }} />
@@ -52,20 +52,21 @@ See [Main.layout](packages/example/src/layouts/Main.astro) for a usage example.
 
 Pagefind has introduced [component-based UI](https://pagefind.app/docs/components/) in version 1.5.0.
 It is now much easier to integrate Pagefind UI into Astro projects.
-New users are encouraged to integrate Pagefind UI component directly instead of using the `astro-pagefind/components/Search` component.
+New users are encouraged to integrate Pagefind UI component directly instead of using the `astro-pagefind/components/Search.astro` component.
 This component is now in maintenance mode and will not receive any new UI-related features anymore.
+You have to import `astro-pagefind/components/PagefindConfig.astro` component to get the Pagefind bundle path wired correctly.
 
 Here is how to get the searchbox UI on a page:
 
 ```astro
 ---
-import "@pagefind/component-ui/css/pagefind-component-ui.css";
+import PagefindConfig from "astro-pagefind/components/PagefindConfig.astro";
 ---
 
+<PagefindConfig />
 <pagefind-searchbox></pagefind-searchbox>
-<script>
-  import "@pagefind/component-ui";
-</script>
 ```
+
+See [Main.layout](packages/example/src/layouts/Main.astro) for a more detailed example.
 
 For more details and information on Pagefind UI please consult [Pagefind docs](https://pagefind.app/docs/components/searchbox/) directly.
