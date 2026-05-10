@@ -14,7 +14,10 @@ const bundlePath = join(import.meta.env.BASE_URL, "pagefind/");
 ---
 
 <pagefind-config {...configOptions} instance={instance} bundle-path={bundlePath}></pagefind-config>
-<pagefind-searchbox {...searchboxOptions} instance={instance} class={className}
+<pagefind-searchbox
+  {...searchboxOptions}
+  instance={instance}
+  class={className}
 ></pagefind-searchbox>
 
 <script>
