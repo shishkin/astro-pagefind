@@ -14,7 +14,7 @@
   ],
   "scripts": {
     "build": "tsc --noEmit",
-    "release": "semantic-release"
+    "release": "semantic-release --dry-run"
   },
   "repository": {
     "type": "git",
