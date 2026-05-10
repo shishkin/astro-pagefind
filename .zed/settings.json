@@ -30,7 +30,11 @@
       "formatter": { "language_server": { "name": "biome" } }
     },
     "HTML": {
-      "formatter": { "language_server": { "name": "biome" } }
+      "formatter": { "language_server": { "name": "biome" } },
+      "code_actions_on_format": {
+        "source.fixAll.biome": true,
+        "source.organizeImports.biome": true
+      }
     },
     "Astro": {
       "formatter": { "language_server": { "name": "biome" } },
