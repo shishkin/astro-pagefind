@@ -4,6 +4,11 @@
   "timezone": "Europe/Berlin",
   "schedule": ["every weekend on the 3rd week of the month"],
   "automergeType": "branch",
+  "lockFileMaintenance": {
+    "enabled": true,
+    "automerge": true,
+    "automergeType": "branch"
+  },
   "packageRules": [
     {
       "matchDepTypes": ["devDependencies", "packageManager"],
