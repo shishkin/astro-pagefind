@@ -17,10 +17,10 @@
     "prepare": "husky"
   },
   "devDependencies": {
-    "@biomejs/biome": "2.4.14",
+    "@biomejs/biome": "2.4.15",
     "@commitlint/cli": "20.5.3",
     "@commitlint/config-conventional": "20.5.3",
     "husky": "9.1.7"
   },
-  "packageManager": "pnpm@11.0.8"
+  "packageManager": "pnpm@11.1.1"
 }
