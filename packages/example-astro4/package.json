@@ -16,5 +16,13 @@
   },
   "dependencies": {
     "astro-pagefind": "workspace:*"
+  },
+  "homepage": "https://github.com/shishkin/astro-pagefind",
+  "bugs": {
+    "url": "https://github.com/shishkin/astro-pagefind/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shishkin/astro-pagefind.git"
   }
 }
