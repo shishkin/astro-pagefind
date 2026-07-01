@@ -33,12 +33,12 @@
   "author": "Sergey Shishkin <sergey@shishkin.org>",
   "license": "MIT",
   "peerDependencies": {
-    "astro": "^2.0.4 || ^3 || ^4 || ^5 || ^6"
+    "astro": "^2.0.4 || ^3 || ^4 || ^5 || ^6 || ^7"
   },
   "devDependencies": {
     "@astrojs/check": "0.9.9",
     "@astrojs/markdown-remark": "7.2.0",
-    "astro": "6.4.8",
+    "astro": "7.0.5",
     "semantic-release": "25.0.5",
     "typescript": "6.0.3"
   },
