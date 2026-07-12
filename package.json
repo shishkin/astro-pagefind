@@ -22,5 +22,5 @@
     "@commitlint/config-conventional": "21.2.0",
     "husky": "9.1.7"
   },
-  "packageManager": "pnpm@11.10.0"
+  "packageManager": "pnpm@11.11.0"
 }
