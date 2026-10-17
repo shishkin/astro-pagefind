@@ -243,7 +243,7 @@ importers:
     dependencies:
       '@astrojs/node':
         specifier: ^11.0.1
-        version: 11.1.7(astro@7.3.8(@astrojs/markdown-remark@7.3.2(supports-color@7.2.0))(@types/node@26.6.5)(@vercel/functions@3.9.11)(jiti@2.6.1)(yaml@2.9.1))
+        version: 11.1.7(astro@7.3.8(@astrojs/markdown-remark@7.3.2(supports-color@7.2.0))(@types/node@26.6.5)(@vercel/functions@3.9.11)(jiti@2.6.1)(yaml@2.9.1))(supports-color@7.2.0)
       astro-pagefind:
         specifier: workspace:*
         version: link:../astro-pagefind
@@ -262,7 +262,7 @@ importers:
     dependencies:
       '@astrojs/vercel':
         specifier: ^11.0.1
-        version: 11.0.13(astro@7.3.8(@astrojs/markdown-remark@7.3.2(supports-color@7.2.0))(@types/node@26.6.5)(@vercel/functions@3.9.11)(jiti@2.6.1)(yaml@2.9.1))
+        version: 11.0.14(astro@7.3.8(@astrojs/markdown-remark@7.3.2(supports-color@7.2.0))(@types/node@26.6.5)(@vercel/functions@3.9.11)(jiti@2.6.1)(yaml@2.9.1))(supports-color@7.2.0)
       astro-pagefind:
         specifier: workspace:*
         version: link:../astro-pagefind
@@ -423,8 +423,8 @@ packages:
     resolution: {integrity: sha512-C1TLn5sPJr0x4vk56piHWKbnqlEB8BKyte5Y45V02U+D7BGO5eMqZDH5aPjnkXQWJggvmsTXxH03QMZ9NgWLzQ==}
     engines: {node: 18.20.8 || ^20.3.0 || >=22.0.0}
 
-  '@astrojs/vercel@11.0.13':
-    resolution: {integrity: sha512-g7JlowxnwkbrLpcXjOq7YAZSEIeyoW8+2xNeXX+iI/L0yOPBgW6Aei1KXPNHdnDOrG7u+mbCt4oeV+IUqtL4FQ==}
+  '@astrojs/vercel@11.0.14':
+    resolution: {integrity: sha512-+OhN/vMecCKeRt4t4NHbiFoJrjqvx6ks9tsLtZzzyRw26gjZ5MbsUWmt/ZpOZ6QoVEJ4/y0uTrGEg4i9MK+nVQ==}
     peerDependencies:
       astro: ^7.0.0
 
@@ -5008,11 +5008,11 @@ snapshots:
       github-slugger: 2.0.0
       satteri: 0.10.5
 
-  '@astrojs/node@11.1.7(astro@7.3.8(@astrojs/markdown-remark@7.3.2(supports-color@7.2.0))(@types/node@26.6.5)(@vercel/functions@3.9.11)(jiti@2.6.1)(yaml@2.9.1))':
+  '@astrojs/node@11.1.7(astro@7.3.8(@astrojs/markdown-remark@7.3.2(supports-color@7.2.0))(@types/node@26.6.5)(@vercel/functions@3.9.11)(jiti@2.6.1)(yaml@2.9.1))(supports-color@7.2.0)':
     dependencies:
       '@astrojs/internal-helpers': 0.12.0
       astro: 7.3.8(@astrojs/markdown-remark@7.3.2(supports-color@7.2.0))(@types/node@26.6.5)(@vercel/functions@3.9.11)(jiti@2.6.1)(yaml@2.9.1)
-      send: 1.2.1
+      send: 1.2.1(supports-color@7.2.0)
       server-destroy: 1.0.1
     transitivePeerDependencies:
       - supports-color
@@ -5044,12 +5044,12 @@ snapshots:
       is-docker: 4.0.0
       package-manager-detector: 1.9.0
 
-  '@astrojs/vercel@11.0.13(astro@7.3.8(@astrojs/markdown-remark@7.3.2(supports-color@7.2.0))(@types/node@26.6.5)(@vercel/functions@3.9.11)(jiti@2.6.1)(yaml@2.9.1))':
+  '@astrojs/vercel@11.0.14(astro@7.3.8(@astrojs/markdown-remark@7.3.2(supports-color@7.2.0))(@types/node@26.6.5)(@vercel/functions@3.9.11)(jiti@2.6.1)(yaml@2.9.1))(supports-color@7.2.0)':
     dependencies:
       '@astrojs/internal-helpers': 0.12.0
       '@vercel/analytics': 2.0.1
       '@vercel/functions': 3.9.11
-      '@vercel/nft': 1.11.0
+      '@vercel/nft': 1.11.0(supports-color@7.2.0)
       '@vercel/routing-utils': 6.6.0
       astro: 7.3.8(@astrojs/markdown-remark@7.3.2(supports-color@7.2.0))(@types/node@26.6.5)(@vercel/functions@3.9.11)(jiti@2.6.1)(yaml@2.9.1)
       rolldown: 1.2.13
@@ -5725,11 +5725,11 @@ snapshots:
       '@jridgewell/resolve-uri': 3.1.2
       '@jridgewell/sourcemap-codec': 1.6.0
 
-  '@mapbox/node-pre-gyp@2.0.3':
+  '@mapbox/node-pre-gyp@2.0.3(supports-color@7.2.0)':
     dependencies:
       consola: 3.4.2
       detect-libc: 2.1.2
-      https-proxy-agent: 7.0.6
+      https-proxy-agent: 7.0.6(supports-color@7.2.0)
       node-fetch: 2.7.0
       nopt: 8.1.0
       semver: 7.8.5
@@ -6283,9 +6283,9 @@ snapshots:
     dependencies:
       '@vercel/oidc': 4.0.0
 
-  '@vercel/nft@1.11.0':
+  '@vercel/nft@1.11.0(supports-color@7.2.0)':
     dependencies:
-      '@mapbox/node-pre-gyp': 2.0.3
+      '@mapbox/node-pre-gyp': 2.0.3(supports-color@7.2.0)
       '@rollup/pluginutils': 5.4.0(rollup@4.64.5)
       acorn: 8.19.0
       acorn-import-attributes: 1.9.5(acorn@8.19.0)
@@ -7506,7 +7506,7 @@ snapshots:
       - kerberos
       - supports-color
 
-  https-proxy-agent@7.0.6:
+  https-proxy-agent@7.0.6(supports-color@7.2.0):
     dependencies:
       agent-base: 7.1.4
       debug: 4.4.3(supports-color@7.2.0)
@@ -9001,7 +9001,7 @@ snapshots:
 
   semver@7.8.5: {}
 
-  send@1.2.1:
+  send@1.2.1(supports-color@7.2.0):
     dependencies:
       debug: 4.4.3(supports-color@7.2.0)
       encodeurl: 2.0.0
