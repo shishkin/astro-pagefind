@@ -1,9 +1,6 @@
 {
   "name": "root",
   "private": true,
-  "engines": {
-    "node": ">=18"
-  },
   "scripts": {
     "dev": "pnpm run --filter=example dev",
     "format:write": "pnpm exec biome format --write",

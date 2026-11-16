@@ -43,6 +43,20 @@
       "groupName": "pagefind",
       "automerge": true,
       "matchPackageNames": ["/pagefind/", "/@pagefind//"]
+    },
+    {
+      "groupName": "node",
+      "matchPackageNames": ["node", "@types/node"]
+    },
+    {
+      "matchPackageNames": ["node"],
+      "matchUpdateTypes": ["major"],
+      "automerge": true
+    },
+    {
+      "matchPackageNames": ["@types/node"],
+      "matchUpdateTypes": ["major"],
+      "automerge": false
     }
   ]
 }
