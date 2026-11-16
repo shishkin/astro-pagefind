@@ -36,10 +36,10 @@
     "astro": "^2.0.4 || ^3 || ^4 || ^5 || ^6 || ^7"
   },
   "devDependencies": {
-    "@astrojs/check": "0.9.10",
-    "@astrojs/markdown-remark": "7.3.2",
+    "@astrojs/check": "0.9.12",
+    "@astrojs/markdown-remark": "7.3.8",
     "@types/node": "26",
-    "astro": "7.3.8",
+    "astro": "7.4.11",
     "semantic-release": "25.0.9",
     "typescript": "6.0.3"
   },
