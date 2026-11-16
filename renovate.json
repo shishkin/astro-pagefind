@@ -1,6 +1,6 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
-  "extends": ["config:best-practices", ":semanticCommits", "helpers:disableTypesNodeMajor"],
+  "extends": ["config:best-practices", ":semanticCommits", "customManagers:biomeVersions"],
   "timezone": "Europe/Berlin",
   "schedule": ["every weekend on the 3rd week of the month"],
   "automergeType": "branch",
@@ -12,6 +12,11 @@
   "packageRules": [
     {
       "matchDepTypes": ["devDependencies", "packageManager"],
+      "groupName": "devDependencies",
+      "automerge": true
+    },
+    {
+      "matchPackageNames": ["@biomejs/biome"],
       "groupName": "devDependencies",
       "automerge": true
     },
