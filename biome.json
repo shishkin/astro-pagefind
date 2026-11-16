@@ -63,6 +63,11 @@
       "enabled": true
     }
   },
+  "markdown": {
+    "parser": {
+      "frontmatter": true
+    }
+  },
   "css": {
     "formatter": {
       "enabled": true,
