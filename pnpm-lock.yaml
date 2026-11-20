@@ -207,7 +207,7 @@ importers:
         specifier: 7.3.8
         version: 7.3.8(supports-color@7.2.0)
       '@types/node':
-        specifier: '26'
+        specifier: 26.6.6
         version: 26.6.6
       astro:
         specifier: 7.4.11

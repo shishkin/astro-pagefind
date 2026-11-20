@@ -38,7 +38,7 @@
   "devDependencies": {
     "@astrojs/check": "0.9.12",
     "@astrojs/markdown-remark": "7.3.8",
-    "@types/node": "26",
+    "@types/node": "26.6.6",
     "astro": "7.4.11",
     "semantic-release": "25.0.9",
     "typescript": "6.0.3"
