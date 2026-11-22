@@ -14,6 +14,7 @@
   ],
   "scripts": {
     "build": "tsc --noEmit",
+    "test": "node --test",
     "release": "semantic-release"
   },
   "repository": {

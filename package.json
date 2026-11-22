@@ -10,6 +10,7 @@
     "build:all": "pnpm run -r --if-present build",
     "build": "pnpm run \"/^(check|build:all)$/\"",
     "release": "pnpm run --filter=astro-pagefind release",
+    "test": "pnpm run -r --if-present test",
     "prepare": "husky"
   },
   "devDependencies": {
