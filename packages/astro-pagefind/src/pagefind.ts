@@ -15,7 +15,7 @@ export interface PagefindOptions {
 }
 
 export default function pagefind({ indexConfig }: PagefindOptions = {}): AstroIntegration {
-  let clientDir: string | undefined;
+  let serveDir: string | undefined;
   return {
     name: "pagefind",
     hooks: {
@@ -25,14 +25,11 @@ export default function pagefind({ indexConfig }: PagefindOptions = {}): AstroIn
             "Output type `server` does not produce static *.html pages in its output and thus will not work with astro-pagefind integration.",
           );
         }
-        if (config.adapter) {
-          clientDir = fileURLToPath(config.build.client);
-        }
+        serveDir = fileURLToPath(config.adapter ? config.build.client : config.outDir);
       },
       "astro:server:setup": ({ server, logger }) => {
-        const outDir = clientDir ?? path.join(server.config.root, server.config.build.outDir);
-        logger.debug(`Serving pagefind from ${outDir}`);
-        const serve = sirv(outDir, {
+        logger.debug(`Serving pagefind from ${serveDir}`);
+        const serve = sirv(serveDir, {
           dev: true,
           etag: true,
         });
